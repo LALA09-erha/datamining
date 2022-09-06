@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Content with notebooks &#8212; My sample book</title>
+    <title>Statistik Deskriptif data &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,8 +50,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
@@ -96,10 +94,10 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="_static/pp.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">My sample book</h1>
+      <h1 class="site-logo" id="site-title">Data Mining</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -123,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Content with notebooks
+   Statistik Deskriptif data
   </a>
  </li>
  <li class="toctree-l1">
@@ -189,24 +187,6 @@ title="Toggle navigation"
   </button>
   <div class="menu-dropdown__content">
     <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/notebooks.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
     </ul>
   </div>
 </div>
@@ -233,7 +213,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://github.com/LALA09-erha/datamining"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -250,7 +230,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/LALA09-erha/datamining/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -338,18 +318,77 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#markdown-notebooks">
-   Markdown + notebooks
+  <a class="reference internal nav-link" href="#run-this-code">
+   <strong>
+    Run this code
+   </strong>
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-libary-python">
+     Import libary python
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#myst-markdown">
-   MyST markdown
+  <a class="reference internal nav-link" href="#membuat-data-dari-url">
+   <strong>
+    1. membuat data dari url
+   </strong>
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
+     Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
+     menampilkan data dalam bentuk chart
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#code-blocks-and-outputs">
-   Code blocks and outputs
+  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+   <strong>
+    2. Membuat statistik diskriptif dari data (bertipe numerik)
+   </strong>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
+     Dengan Menggunakan libary langsung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-pencarian-manual">
+     Dengan Pencarian Manual
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-positif">
+     data diskriptif Positif
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-odp">
+     data diskriptif Odp
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-pdp">
+     data diskriptif Pdp
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+   <strong>
+    3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+   </strong>
   </a>
  </li>
 </ul>
@@ -361,7 +400,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Content with notebooks</h1>
+                <h1>Statistik Deskriptif data</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -372,18 +411,77 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#markdown-notebooks">
-   Markdown + notebooks
+  <a class="reference internal nav-link" href="#run-this-code">
+   <strong>
+    Run this code
+   </strong>
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-libary-python">
+     Import libary python
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#myst-markdown">
-   MyST markdown
+  <a class="reference internal nav-link" href="#membuat-data-dari-url">
+   <strong>
+    1. membuat data dari url
+   </strong>
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
+     Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
+     menampilkan data dalam bentuk chart
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#code-blocks-and-outputs">
-   Code blocks and outputs
+  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+   <strong>
+    2. Membuat statistik diskriptif dari data (bertipe numerik)
+   </strong>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
+     Dengan Menggunakan libary langsung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-pencarian-manual">
+     Dengan Pencarian Manual
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-positif">
+     data diskriptif Positif
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-odp">
+     data diskriptif Odp
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-pdp">
+     data diskriptif Pdp
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+   <strong>
+    3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+   </strong>
   </a>
  </li>
 </ul>
@@ -396,78 +494,506 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Permalink to this headline">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Permalink to this headline">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
-</section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Permalink to this headline">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Permalink to this headline">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="statistik-deskriptif-data">
+<h1>Statistik Deskriptif data<a class="headerlink" href="#statistik-deskriptif-data" title="Permalink to this headline">#</a></h1>
+<section id="run-this-code">
+<h2><strong>Run this code</strong><a class="headerlink" href="#run-this-code" title="Permalink to this headline">#</a></h2>
+<section id="import-libary-python">
+<h3>Import libary python<a class="headerlink" href="#import-libary-python" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">skew</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/yanchespenda/covid19-indonesia-datasource-csv/master/provinsi/hari</span><span class="si">%20i</span><span class="s2">ni/Jawa%20Timur.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="membuat-data-dari-url">
+<h2><strong>1. membuat data dari url</strong><a class="headerlink" href="#membuat-data-dari-url" title="Permalink to this headline">#</a></h2>
+<section id="menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
+<h3>Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1<a class="headerlink" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kasus</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Positif&#39;</span><span class="p">]</span> <span class="o">&gt;=</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">kasus</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/notebooks_2_0.png" src="_images/notebooks_2_0.png" />
+<div class="output text_html">
+  <div id="df-f1108016-f8f2-447f-94c5-626a28f67187">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Kabupaten/Kota</th>
+      <th>Positif</th>
+      <th>Sembuh</th>
+      <th>Meninggal</th>
+      <th>Odp</th>
+      <th>Pdp</th>
+      <th>Terakhir Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Kabupaten Blitar</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>282</td>
+      <td>2</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Kabupaten Tulungagung</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>462</td>
+      <td>26</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Kabupaten Situbondo</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121</td>
+      <td>3</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Kota Batu</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70</td>
+      <td>1</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Kota Surabaya</td>
+      <td>41</td>
+      <td>0</td>
+      <td>0</td>
+      <td>206</td>
+      <td>61</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Kota Blitar</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>102</td>
+      <td>1</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Kota Kediri</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71</td>
+      <td>1</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Kabupaten Lumajang</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>104</td>
+      <td>8</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Kabupaten Banyuwangi</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>196</td>
+      <td>1</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Kabupaten Jember</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>207</td>
+      <td>10</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Kota Malang</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>165</td>
+      <td>16</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Kabupaten Pamekasan</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>115</td>
+      <td>1</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Kabupaten Gresik</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>153</td>
+      <td>25</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Kabupaten Jombang</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146</td>
+      <td>3</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Kabupaten Kediri</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>107</td>
+      <td>5</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Kabupaten Sidoarjo</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>124</td>
+      <td>49</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Kabupaten Malang</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69</td>
+      <td>18</td>
+      <td>30-03-2020</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Kabupaten Magetan</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43</td>
+      <td>9</td>
+      <td>30-03-2020</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f1108016-f8f2-447f-94c5-626a28f67187')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-f1108016-f8f2-447f-94c5-626a28f67187 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-f1108016-f8f2-447f-94c5-626a28f67187');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="menampilkan-data-dalam-bentuk-chart">
+<h3>menampilkan data dalam bentuk chart<a class="headerlink" href="#menampilkan-data-dalam-bentuk-chart" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">kasus</span><span class="p">[</span><span class="s1">&#39;Kabupaten/Kota&#39;</span><span class="p">]</span>
+<span class="n">kota</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+   <span class="n">namakota</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+   <span class="n">kota</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">namakota</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">kasus</span><span class="p">[</span><span class="s1">&#39;Positif&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Positif&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Kabupaten&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">kota</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Data Covid19 Jatim 30-3-2020 Positif&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+<div class="cell_output docutils container">
+<img alt="_images/notebooks_8_0.png" src="_images/notebooks_8_0.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+<h2><strong>2. Membuat statistik diskriptif dari data (bertipe numerik)</strong><a class="headerlink" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik" title="Permalink to this headline">#</a></h2>
+<section id="dengan-menggunakan-libary-langsung">
+<h3>Dengan Menggunakan libary langsung<a class="headerlink" href="#dengan-menggunakan-libary-langsung" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataDis</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dataDis</span><span class="p">:</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dataDis</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">label</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/notebooks_11_0.png" src="_images/notebooks_11_0.png" />
+</div>
+</div>
+</section>
+<section id="dengan-pencarian-manual">
+<h3>Dengan Pencarian Manual<a class="headerlink" href="#dengan-pencarian-manual" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="data-diskriptif-positif">
+<h3>data diskriptif Positif<a class="headerlink" href="#data-diskriptif-positif" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;median&#39;</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;kasus max&#39;</span><span class="p">,</span><span class="s1">&#39;kasus min&#39;</span><span class="p">,</span><span class="s1">&#39;sim_baku&#39;</span><span class="p">,</span> <span class="s1">&#39;rentang_data&#39;</span><span class="p">]</span>
+<span class="n">mean_Positif</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">kasus_Positifmax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">kasus_Positifmin</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">simpanganBaku_Positif</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">rentangData_Positif</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">median_Positif</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Positif</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-diskriptif-odp">
+<h3>data diskriptif Odp<a class="headerlink" href="#data-diskriptif-odp" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_odp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">kasus_Odpmax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">kasus_Odpmin</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">simpanganBaku_odp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">rentangData_odp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">median_Odp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Odp</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-diskriptif-pdp">
+<h3>data diskriptif Pdp<a class="headerlink" href="#data-diskriptif-pdp" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_Pdp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">kasus_Pdpmax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">kasus_Pdpmin</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">simpanganBaku_Pdp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">rentangData_Pdp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">median_Pdp</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Pdp</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="n">median_Positif</span><span class="p">,</span><span class="n">mean_Positif</span><span class="p">,</span><span class="n">kasus_Positifmax</span><span class="p">,</span><span class="n">kasus_Positifmin</span><span class="p">,</span><span class="n">simpanganBaku_Positif</span><span class="p">,</span><span class="n">rentangData_Positif</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Positif&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="n">median_Odp</span><span class="p">,</span><span class="n">mean_odp</span><span class="p">,</span><span class="n">kasus_Odpmax</span><span class="p">,</span><span class="n">kasus_Odpmin</span><span class="p">,</span><span class="n">simpanganBaku_odp</span><span class="p">,</span><span class="n">rentangData_odp</span><span class="p">],</span><span class="n">color</span><span class="o">=</span> <span class="s1">&#39;g&#39;</span> <span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Odp&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="n">median_Pdp</span><span class="p">,</span><span class="n">mean_Pdp</span><span class="p">,</span><span class="n">kasus_Pdpmax</span><span class="p">,</span><span class="n">kasus_Pdpmin</span><span class="p">,</span><span class="n">simpanganBaku_Pdp</span><span class="p">,</span><span class="n">rentangData_Pdp</span><span class="p">],</span><span class="n">color</span><span class="o">=</span> <span class="s1">&#39;b&#39;</span> <span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Pdp&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Angka&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Statistik Diskriptif Covid19 Jatim 30-3-2020&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/notebooks_19_0.png" src="_images/notebooks_19_0.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+<h2><strong>3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)</strong><a class="headerlink" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_num</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">([</span><span class="s1">&#39;int64&#39;</span><span class="p">,</span><span class="s1">&#39;float64&#39;</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">colom</span> <span class="ow">in</span> <span class="n">data_num</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">colom</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">skew</span><span class="p">(</span><span class="n">data_num</span><span class="p">[</span><span class="n">colom</span><span class="p">]))</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+  <span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">data_num</span><span class="p">[</span><span class="n">colom</span><span class="p">],</span><span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Skew Data tipe Numerik&quot;</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+Positif
+4.959147108941667
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/notebooks_21_2.png" src="_images/notebooks_21_2.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+Sembuh
+0.0
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/notebooks_21_5.png" src="_images/notebooks_21_5.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+Meninggal
+0.0
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/notebooks_21_8.png" src="_images/notebooks_21_8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+Odp
+1.4310829984067657
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/notebooks_21_11.png" src="_images/notebooks_21_11.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+Pdp
+2.479893820178332
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/notebooks_21_14.png" src="_images/notebooks_21_14.png" />
+</div>
+</div>
 </section>
 </section>
 
@@ -519,7 +1045,7 @@ with your book. For more information about this, see <a class="reference externa
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book Community<br/>
+    By Fikri Ainun Najib<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

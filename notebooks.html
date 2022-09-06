@@ -52,8 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,20 +112,32 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Home
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="markdown.html">
    Markdown Files
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Statistik Deskriptif data
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="markdown-notebooks.html">
    Notebooks with MyST Markdown
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Task
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Statistik Deskriptif data
   </a>
  </li>
 </ul>
@@ -335,78 +346,90 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#run-this-code">
-   <strong>
-    Run this code
-   </strong>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Statistik Deskriptif data
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#import-libary-python">
-     Import libary python
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-this-code">
+     <strong>
+      Run this code
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#import-libary-python">
+       Import libary python
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membuat-data-dari-url">
+     <strong>
+      1. membuat data dari url
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
+       Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
+       menampilkan data dalam bentuk chart
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+     <strong>
+      2. Membuat statistik diskriptif dari data (bertipe numerik)
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
+       Dengan Menggunakan libary langsung
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dengan-pencarian-manual">
+       Dengan Pencarian Manual
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-diskriptif-positif">
+       data diskriptif Positif
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-diskriptif-odp">
+       data diskriptif Odp
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-diskriptif-pdp">
+       data diskriptif Pdp
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+     <strong>
+      3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+     </strong>
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#membuat-data-dari-url">
-   <strong>
-    1. membuat data dari url
-   </strong>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
-     Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
-     menampilkan data dalam bentuk chart
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
-   <strong>
-    2. Membuat statistik diskriptif dari data (bertipe numerik)
-   </strong>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
-     Dengan Menggunakan libary langsung
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dengan-pencarian-manual">
-     Dengan Pencarian Manual
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-diskriptif-positif">
-     data diskriptif Positif
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-diskriptif-odp">
-     data diskriptif Odp
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-diskriptif-pdp">
-     data diskriptif Pdp
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
-   <strong>
-    3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
-   </strong>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-2">
+   Tugas 2
   </a>
  </li>
 </ul>
@@ -428,78 +451,90 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#run-this-code">
-   <strong>
-    Run this code
-   </strong>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Statistik Deskriptif data
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#import-libary-python">
-     Import libary python
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-this-code">
+     <strong>
+      Run this code
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#import-libary-python">
+       Import libary python
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membuat-data-dari-url">
+     <strong>
+      1. membuat data dari url
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
+       Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
+       menampilkan data dalam bentuk chart
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+     <strong>
+      2. Membuat statistik diskriptif dari data (bertipe numerik)
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
+       Dengan Menggunakan libary langsung
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dengan-pencarian-manual">
+       Dengan Pencarian Manual
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-diskriptif-positif">
+       data diskriptif Positif
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-diskriptif-odp">
+       data diskriptif Odp
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-diskriptif-pdp">
+       data diskriptif Pdp
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+     <strong>
+      3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+     </strong>
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#membuat-data-dari-url">
-   <strong>
-    1. membuat data dari url
-   </strong>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-table-kasus-covid-19-positif-yang-lebih-dari-sama-dengan-1">
-     Menampilkan data dalam bentuk table, Kasus Covid 19 Positif yang lebih dari sama dengan 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
-     menampilkan data dalam bentuk chart
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
-   <strong>
-    2. Membuat statistik diskriptif dari data (bertipe numerik)
-   </strong>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
-     Dengan Menggunakan libary langsung
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dengan-pencarian-manual">
-     Dengan Pencarian Manual
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-diskriptif-positif">
-     data diskriptif Positif
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-diskriptif-odp">
-     data diskriptif Odp
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-diskriptif-pdp">
-     data diskriptif Pdp
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
-   <strong>
-    3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
-   </strong>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-2">
+   Tugas 2
   </a>
  </li>
 </ul>
@@ -548,7 +583,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c76e5969-42a0-4433-bce1-a1fd6fee3606">
+  <div id="df-fe8a2020-bd46-469e-8738-ddb1f709aa7b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -761,7 +796,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c76e5969-42a0-4433-bce1-a1fd6fee3606')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-fe8a2020-bd46-469e-8738-ddb1f709aa7b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -812,12 +847,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c76e5969-42a0-4433-bce1-a1fd6fee3606 button.colab-df-convert');
+          document.querySelector('#df-fe8a2020-bd46-469e-8738-ddb1f709aa7b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c76e5969-42a0-4433-bce1-a1fd6fee3606');
+          const element = document.querySelector('#df-fe8a2020-bd46-469e-8738-ddb1f709aa7b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1014,6 +1049,9 @@ Pdp
 </div>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
+<h1>Tugas 2<a class="headerlink" href="#tugas-2" title="Permalink to this headline">#</a></h1>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1042,19 +1080,12 @@ Pdp
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="markdown.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="markdown-notebooks.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Markdown Files</p>
+            <p class="prev-next-title">Notebooks with MyST Markdown</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="markdown-notebooks.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

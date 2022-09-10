@@ -869,7 +869,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a">
+  <div id="df-563ee387-6e07-41e0-93eb-f369773b6519">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1082,7 +1082,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-563ee387-6e07-41e0-93eb-f369773b6519')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1133,12 +1133,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a button.colab-df-convert');
+          document.querySelector('#df-563ee387-6e07-41e0-93eb-f369773b6519 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a');
+          const element = document.querySelector('#df-563ee387-6e07-41e0-93eb-f369773b6519');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1441,7 +1441,7 @@ Pdp
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-865de241-d532-42c4-b107-f7c45941b7e5">
+  <div id="df-988a986b-de33-47cd-9838-6290861c49d1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1561,7 +1561,7 @@ Pdp
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-865de241-d532-42c4-b107-f7c45941b7e5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-988a986b-de33-47cd-9838-6290861c49d1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1612,12 +1612,12 @@ Pdp
 
       <script>
         const buttonEl =
-          document.querySelector('#df-865de241-d532-42c4-b107-f7c45941b7e5 button.colab-df-convert');
+          document.querySelector('#df-988a986b-de33-47cd-9838-6290861c49d1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-865de241-d532-42c4-b107-f7c45941b7e5');
+          const element = document.querySelector('#df-988a986b-de33-47cd-9838-6290861c49d1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1672,9 +1672,7 @@ Pdp
 <h2><strong>2. diskritisasi data panjang sepal dengan equal Width</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-width" title="Permalink to this headline">#</a></h2>
 <section id="proses-diskritisasi-dengan-basis-entropy">
 <h3>Proses diskritisasi dengan basis entropy<a class="headerlink" href="#proses-diskritisasi-dengan-basis-entropy" title="Permalink to this headline">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">Melakukan</span> <span class="n">proses</span> <span class="n">diskritasi</span> <span class="n">dengan</span> <span class="n">Equal</span> <span class="n">Width</span> <span class="n">pertama</span> <span class="n">dengan</span> <span class="n">memasukkan</span> <span class="n">data</span> <span class="n">pada</span> <span class="n">rumus</span> <span class="n">Entropy</span>
-</pre></div>
-</div>
+<p>Melakukan proses diskritasi dengan Equal Width pertama dengan memasukkan data pada rumus Entropy</p>
 <p><strong>Rumus Entropy :</strong></p>
 <blockquote>
 <div><p><em>Entropy</em><span class="math notranslate nohighlight">\((D_1) = - ∑_{i=1}^{m}p_i log_2 p_i\)</span></p>
@@ -1915,6 +1913,7 @@ Pdp
 </section>
 <section id="menghitung-data-keseluruhan-width-d">
 <h3><strong>Menghitung Data Keseluruhan Width (D)</strong><a class="headerlink" href="#menghitung-data-keseluruhan-width-d" title="Permalink to this headline">#</a></h3>
+<p>Untuk menghitung data keseluruhan, juga memakai rumus Entropy</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlahkeselurusah_width</span> <span class="o">=</span> <span class="n">jumlah_width1</span> <span class="o">+</span><span class="n">jumlah_width2</span>
@@ -1946,6 +1945,16 @@ Pdp
 </section>
 <section id="menghitung-data-width-info-a">
 <h3><strong>Menghitung Data Width <span class="math notranslate nohighlight">\(info_a\)</span></strong><a class="headerlink" href="#menghitung-data-width-info-a" title="Permalink to this headline">#</a></h3>
+<p><strong>Rumus :</strong></p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(info_a = \frac{|D_1|}{|D|} Entropy(D_1) + \frac{|D_2|}{|D|} Entropy(D_2)\)</span></p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
+  <span class="n">D1</span><span class="o">/</span><span class="n">D2</span>      <span class="o">=</span> <span class="n">jumlah</span> <span class="n">data</span>
+  <span class="n">D</span>          <span class="o">=</span> <span class="n">jumlah</span> <span class="n">keseluruhan</span> <span class="n">data</span>
+  <span class="n">Entropy</span><span class="p">(</span><span class="n">D</span><span class="p">)</span> <span class="o">=</span> <span class="n">hasil</span> <span class="n">entropy</span> <span class="n">data</span> 
+</pre></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">infoa_width</span> <span class="o">=</span> <span class="p">((</span><span class="n">jumlah_width1</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span><span class="o">*</span><span class="n">jumlah_data_width1</span><span class="p">)</span> <span class="o">+</span> <span class="p">((</span><span class="n">jumlah_width2</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span> <span class="o">*</span><span class="n">jumlah_data_width2</span><span class="p">)</span>
@@ -1962,6 +1971,16 @@ Pdp
 </section>
 <section id="menghitung-data-width-gain-d-new">
 <h3><strong>Menghitung Data Width Gain <span class="math notranslate nohighlight">\((D_{new)}\)</span></strong><a class="headerlink" href="#menghitung-data-width-gain-d-new" title="Permalink to this headline">#</a></h3>
+<p><strong>Rumus Gain<span class="math notranslate nohighlight">\((D_1)\)</span> :</strong></p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(Gain(E_{new}) = E_{initial} - E_{new}\)</span></p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
+  <span class="n">Gain</span>     <span class="o">=</span> <span class="n">gain</span>
+  <span class="n">Einitial</span> <span class="o">=</span> <span class="n">jumlah_data_width</span>
+  <span class="n">Enew</span>     <span class="o">=</span> <span class="n">infoa</span>
+</pre></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gain_width</span> <span class="o">=</span> <span class="n">jumlah_data_width</span> <span class="o">-</span> <span class="n">infoa_width</span>
@@ -1978,6 +1997,7 @@ Pdp
 </section>
 <section id="tranformasi">
 <h3><strong>Tranformasi</strong><a class="headerlink" href="#tranformasi" title="Permalink to this headline">#</a></h3>
+<p>untuk tranformasi, data yang kurang dari <strong>middle_width</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Setosa</span></code>, lalu untuk yang sama dengan <strong>middle_width</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">VersiColor</span></code>,sedangkan untuk yang lebih dari middle_width akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Virginica</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sepal_width</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1995,7 +2015,7 @@ Pdp
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-baee22c2-b6c3-467c-843e-845d42529ea2">
+  <div id="df-be8828f5-57b5-4234-bc4e-2ea91af1a9d8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2079,7 +2099,7 @@ Pdp
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-baee22c2-b6c3-467c-843e-845d42529ea2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-be8828f5-57b5-4234-bc4e-2ea91af1a9d8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2130,12 +2150,12 @@ Pdp
 
       <script>
         const buttonEl =
-          document.querySelector('#df-baee22c2-b6c3-467c-843e-845d42529ea2 button.colab-df-convert');
+          document.querySelector('#df-be8828f5-57b5-4234-bc4e-2ea91af1a9d8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-baee22c2-b6c3-467c-843e-845d42529ea2');
+          const element = document.querySelector('#df-be8828f5-57b5-4234-bc4e-2ea91af1a9d8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2160,9 +2180,7 @@ Pdp
 </section>
 <section id="diskritisasi-data-panjang-sepal-dengan-equal-frequency">
 <h2><strong>3. diskritisasi data panjang sepal dengan equal Frequency</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency" title="Permalink to this headline">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">Melakukan</span> <span class="n">proses</span> <span class="n">diskritasi</span> <span class="n">dengan</span> <span class="n">Equal</span> <span class="n">Frequency</span> <span class="n">pertama</span> <span class="n">dengan</span> <span class="n">memasukkan</span> <span class="n">data</span> <span class="n">pada</span> <span class="n">rumus</span> <span class="n">Entropy</span>
-</pre></div>
-</div>
+<p>Melakukan proses diskritasi dengan Equal Frequency pertama dengan memasukkan data pada rumus Entropy</p>
 <p><strong>Rumus Entropy :</strong></p>
 <blockquote>
 <div><p><em>Entropy</em><span class="math notranslate nohighlight">\((D_1) = - ∑_{i=1}^{m}p_i log_2 p_i\)</span></p>
@@ -2402,6 +2420,7 @@ Pdp
 </section>
 <section id="menghitung-data-keseluruhan-frequency-d">
 <h3><strong>Menghitung Data Keseluruhan Frequency (D)</strong><a class="headerlink" href="#menghitung-data-keseluruhan-frequency-d" title="Permalink to this headline">#</a></h3>
+<p>Untuk menghitung data keseluruhan, juga memakai rumus Entropy</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlahkeselurusah_frequency</span> <span class="o">=</span> <span class="n">jumlah_frequency1</span> <span class="o">+</span> <span class="n">jumlah_frequency2</span>
@@ -2457,6 +2476,16 @@ Pdp
 </section>
 <section id="menghitung-data-frequency-info-a">
 <h3><strong>Menghitung Data Frequency <span class="math notranslate nohighlight">\(info_a\)</span></strong><a class="headerlink" href="#menghitung-data-frequency-info-a" title="Permalink to this headline">#</a></h3>
+<p><strong>Rumus :</strong></p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(info_a = \frac{|D_1|}{|D|} Entropy(D_1) + \frac{|D_2|}{|D|} Entropy(D_2)\)</span></p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
+  <span class="n">D1</span><span class="o">/</span><span class="n">D2</span>      <span class="o">=</span> <span class="n">jumlah</span> <span class="n">data</span>
+  <span class="n">D</span>          <span class="o">=</span> <span class="n">jumlah</span> <span class="n">keseluruhan</span> <span class="n">data</span>
+  <span class="n">Entropy</span><span class="p">(</span><span class="n">D</span><span class="p">)</span> <span class="o">=</span> <span class="n">hasil</span> <span class="n">entropy</span> <span class="n">data</span> 
+</pre></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">infoa_frequency</span> <span class="o">=</span> <span class="p">((</span><span class="n">jumlah_frequency1</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span><span class="o">*</span><span class="n">jumlah_data_frequency1</span><span class="p">)</span> <span class="o">+</span> <span class="p">((</span><span class="n">jumlah_frequency2</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span><span class="o">*</span><span class="n">jumlah_data_frequency2</span><span class="p">)</span>
@@ -2473,6 +2502,16 @@ Pdp
 </section>
 <section id="menghitung-data-frequency-gain-d-new">
 <h3><strong>Menghitung Data Frequency Gain <span class="math notranslate nohighlight">\((D_{new})\)</span></strong><a class="headerlink" href="#menghitung-data-frequency-gain-d-new" title="Permalink to this headline">#</a></h3>
+<p><strong>Rumus Gain<span class="math notranslate nohighlight">\((D_1)\)</span> :</strong></p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(Gain(E_{new}) = E_{initial} - E_{new}\)</span></p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
+  <span class="n">Gain</span>     <span class="o">=</span> <span class="n">gain</span>
+  <span class="n">Einitial</span> <span class="o">=</span> <span class="n">jumlah_data_frequency</span>
+  <span class="n">Enew</span>     <span class="o">=</span> <span class="n">infoa</span>
+</pre></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Dnew_frequency</span> <span class="o">=</span> <span class="n">jumlah_data_frequency</span> <span class="o">-</span> <span class="n">infoa_frequency</span>
@@ -2489,15 +2528,16 @@ Pdp
 </section>
 <section id="id1">
 <h3><strong>Tranformasi</strong><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>untuk tranformasi, data yang kurang dari <strong>middle_frequency</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Setosa</span></code>, lalu untuk yang sama dengan <strong>middle_frequency</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">VersiColor</span></code>,sedangkan untuk yang lebih dari middle_frequency akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Virginica</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sepal_frequency</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]:</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">middle_width</span><span class="p">):</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">middle_frequency</span><span class="p">):</span>
     <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Setosa&#39;</span><span class="p">])</span>
-  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">middle_width</span><span class="p">):</span>
+  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">middle_frequency</span><span class="p">):</span>
     <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">])</span>
-  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">middle_width</span><span class="p">):</span>
+  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">middle_frequency</span><span class="p">):</span>
     <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Virginica&#39;</span><span class="p">])</span>
 <span class="n">trf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data_sepal_frequency</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;kelas&#39;</span><span class="p">])</span>
 <span class="n">trf</span>
@@ -2506,7 +2546,7 @@ Pdp
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cd25010a-49d4-4b1f-a33f-3258593dd054">
+  <div id="df-b4e26ef9-0dd8-4786-8787-cfb5f227192c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2584,13 +2624,13 @@ Pdp
     <tr>
       <th>149</th>
       <td>5.9</td>
-      <td>Setosa</td>
+      <td>Virginica</td>
     </tr>
   </tbody>
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cd25010a-49d4-4b1f-a33f-3258593dd054')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b4e26ef9-0dd8-4786-8787-cfb5f227192c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2641,12 +2681,12 @@ Pdp
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cd25010a-49d4-4b1f-a33f-3258593dd054 button.colab-df-convert');
+          document.querySelector('#df-b4e26ef9-0dd8-4786-8787-cfb5f227192c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cd25010a-49d4-4b1f-a33f-3258593dd054');
+          const element = document.querySelector('#df-b4e26ef9-0dd8-4786-8787-cfb5f227192c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

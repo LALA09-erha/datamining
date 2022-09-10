@@ -1,6 +1,6 @@
 # About Me
 
-Hello,
-`Name`   : Fikri Ainun Najib
-`NIM`    : 200411100153
-`course` : Data Mining A
+Hello,<br>
+`Name`   : Fikri Ainun Najib<br>
+`NIM`    : 200411100153<br>
+`course` : Data Mining A<br>

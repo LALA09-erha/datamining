@@ -440,7 +440,7 @@ title="Print to PDF"
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-width">
      <strong>
-      diskritisasi data panjang sepal dengan equal Width
+      2. diskritisasi data panjang sepal dengan equal Width
      </strong>
     </a>
     <ul class="nav section-nav flex-column">
@@ -496,12 +496,19 @@ title="Print to PDF"
        </strong>
       </a>
      </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tranformasi">
+       <strong>
+        Tranformasi
+       </strong>
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency">
      <strong>
-      diskritisasi data panjang sepal dengan equal Frequency
+      3. diskritisasi data panjang sepal dengan equal Frequency
      </strong>
     </a>
     <ul class="nav section-nav flex-column">
@@ -516,9 +523,9 @@ title="Print to PDF"
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-pertama-frequency-d-2">
+      <a class="reference internal nav-link" href="#menghitung-data-kedua-frequency-d-2">
        <strong>
-        Menghitung Data Pertama Frequency
+        Menghitung Data Kedua Frequency
         <span class="math notranslate nohighlight">
          \((D_2)\)
         </span>
@@ -547,8 +554,22 @@ title="Print to PDF"
        <strong>
         Menghitung Data Frequency Gain
         <span class="math notranslate nohighlight">
-         \((D_{new)}\)
+         \((D_{new})\)
         </span>
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       <strong>
+        Tranformasi
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kesimpulan">
+       <strong>
+        Kesimpulan
        </strong>
       </a>
      </li>
@@ -666,7 +687,7 @@ title="Print to PDF"
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-width">
      <strong>
-      diskritisasi data panjang sepal dengan equal Width
+      2. diskritisasi data panjang sepal dengan equal Width
      </strong>
     </a>
     <ul class="nav section-nav flex-column">
@@ -722,12 +743,19 @@ title="Print to PDF"
        </strong>
       </a>
      </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tranformasi">
+       <strong>
+        Tranformasi
+       </strong>
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency">
      <strong>
-      diskritisasi data panjang sepal dengan equal Frequency
+      3. diskritisasi data panjang sepal dengan equal Frequency
      </strong>
     </a>
     <ul class="nav section-nav flex-column">
@@ -742,9 +770,9 @@ title="Print to PDF"
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-pertama-frequency-d-2">
+      <a class="reference internal nav-link" href="#menghitung-data-kedua-frequency-d-2">
        <strong>
-        Menghitung Data Pertama Frequency
+        Menghitung Data Kedua Frequency
         <span class="math notranslate nohighlight">
          \((D_2)\)
         </span>
@@ -773,8 +801,22 @@ title="Print to PDF"
        <strong>
         Menghitung Data Frequency Gain
         <span class="math notranslate nohighlight">
-         \((D_{new)}\)
+         \((D_{new})\)
         </span>
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       <strong>
+        Tranformasi
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kesimpulan">
+       <strong>
+        Kesimpulan
        </strong>
       </a>
      </li>
@@ -806,9 +848,6 @@ title="Print to PDF"
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">skew</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/yanchespenda/covid19-indonesia-datasource-csv/master/provinsi/hari</span><span class="si">%20i</span><span class="s2">ni/Jawa%20Timur.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -822,14 +861,15 @@ title="Print to PDF"
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kasus</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Positif&#39;</span><span class="p">]</span> <span class="o">&gt;=</span><span class="mi">1</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/yanchespenda/covid19-indonesia-datasource-csv/master/provinsi/hari</span><span class="si">%20i</span><span class="s2">ni/Jawa%20Timur.csv&quot;</span><span class="p">)</span>
+<span class="n">kasus</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Positif&#39;</span><span class="p">]</span> <span class="o">&gt;=</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">kasus</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e5306bb3-85b8-4285-85d8-6b4e857af7e2">
+  <div id="df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1042,7 +1082,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e5306bb3-85b8-4285-85d8-6b4e857af7e2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1093,12 +1133,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e5306bb3-85b8-4285-85d8-6b4e857af7e2 button.colab-df-convert');
+          document.querySelector('#df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e5306bb3-85b8-4285-85d8-6b4e857af7e2');
+          const element = document.querySelector('#df-b0f8cb2a-82bd-4b07-ab6d-08b2dbdee74a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1393,8 +1433,7 @@ Pdp
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">math</span>
-
-
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span> <span class="k">as</span> <span class="n">md</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv&quot;</span><span class="p">)</span>
 <span class="n">data</span>
 </pre></div>
@@ -1402,7 +1441,7 @@ Pdp
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f59b26e2-dace-4aa9-aca0-5d5019f78ba9">
+  <div id="df-865de241-d532-42c4-b107-f7c45941b7e5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1522,7 +1561,7 @@ Pdp
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f59b26e2-dace-4aa9-aca0-5d5019f78ba9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-865de241-d532-42c4-b107-f7c45941b7e5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1573,12 +1612,12 @@ Pdp
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f59b26e2-dace-4aa9-aca0-5d5019f78ba9 button.colab-df-convert');
+          document.querySelector('#df-865de241-d532-42c4-b107-f7c45941b7e5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f59b26e2-dace-4aa9-aca0-5d5019f78ba9');
+          const element = document.querySelector('#df-865de241-d532-42c4-b107-f7c45941b7e5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1630,7 +1669,7 @@ Pdp
 </section>
 </section>
 <section id="diskritisasi-data-panjang-sepal-dengan-equal-width">
-<h2><strong>diskritisasi data panjang sepal dengan equal Width</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-width" title="Permalink to this headline">#</a></h2>
+<h2><strong>2. diskritisasi data panjang sepal dengan equal Width</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-width" title="Permalink to this headline">#</a></h2>
 <section id="proses-diskritisasi-dengan-basis-entropy">
 <h3>Proses diskritisasi dengan basis entropy<a class="headerlink" href="#proses-diskritisasi-dengan-basis-entropy" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">Melakukan</span> <span class="n">proses</span> <span class="n">diskritasi</span> <span class="n">dengan</span> <span class="n">Equal</span> <span class="n">Width</span> <span class="n">pertama</span> <span class="n">dengan</span> <span class="n">memasukkan</span> <span class="n">data</span> <span class="n">pada</span> <span class="n">rumus</span> <span class="n">Entropy</span>
@@ -1937,9 +1976,190 @@ Pdp
 </div>
 </div>
 </section>
+<section id="tranformasi">
+<h3><strong>Tranformasi</strong><a class="headerlink" href="#tranformasi" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sepal_width</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]:</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">middle_width</span><span class="p">):</span>
+    <span class="n">data_sepal_width</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Setosa&#39;</span><span class="p">])</span>
+  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">middle_width</span><span class="p">):</span>
+    <span class="n">data_sepal_width</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">])</span>
+  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">middle_width</span><span class="p">):</span>
+    <span class="n">data_sepal_width</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Virginica&#39;</span><span class="p">])</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data_sepal_width</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;kelas&#39;</span><span class="p">])</span>
+<span class="n">tf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-baee22c2-b6c3-467c-843e-845d42529ea2">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal.length</th>
+      <th>kelas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.1</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.9</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.7</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.6</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.0</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>6.7</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>6.3</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>6.5</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>6.2</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>5.9</td>
+      <td>Setosa</td>
+    </tr>
+  </tbody>
+</table>
+<p>150 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-baee22c2-b6c3-467c-843e-845d42529ea2')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-baee22c2-b6c3-467c-843e-845d42529ea2 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-baee22c2-b6c3-467c-843e-845d42529ea2');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
 </section>
 <section id="diskritisasi-data-panjang-sepal-dengan-equal-frequency">
-<h2><strong>diskritisasi data panjang sepal dengan equal Frequency</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency" title="Permalink to this headline">#</a></h2>
+<h2><strong>3. diskritisasi data panjang sepal dengan equal Frequency</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">Melakukan</span> <span class="n">proses</span> <span class="n">diskritasi</span> <span class="n">dengan</span> <span class="n">Equal</span> <span class="n">Frequency</span> <span class="n">pertama</span> <span class="n">dengan</span> <span class="n">memasukkan</span> <span class="n">data</span> <span class="n">pada</span> <span class="n">rumus</span> <span class="n">Entropy</span>
 </pre></div>
 </div>
@@ -2067,8 +2287,8 @@ Pdp
 </div>
 </div>
 </section>
-<section id="menghitung-data-pertama-frequency-d-2">
-<h3><strong>Menghitung Data Pertama Frequency <span class="math notranslate nohighlight">\((D_2)\)</span></strong><a class="headerlink" href="#menghitung-data-pertama-frequency-d-2" title="Permalink to this headline">#</a></h3>
+<section id="menghitung-data-kedua-frequency-d-2">
+<h3><strong>Menghitung Data Kedua Frequency <span class="math notranslate nohighlight">\((D_2)\)</span></strong><a class="headerlink" href="#menghitung-data-kedua-frequency-d-2" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency2_1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Setosa&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
@@ -2252,7 +2472,7 @@ Pdp
 </div>
 </section>
 <section id="menghitung-data-frequency-gain-d-new">
-<h3><strong>Menghitung Data Frequency Gain <span class="math notranslate nohighlight">\((D_{new)}\)</span></strong><a class="headerlink" href="#menghitung-data-frequency-gain-d-new" title="Permalink to this headline">#</a></h3>
+<h3><strong>Menghitung Data Frequency Gain <span class="math notranslate nohighlight">\((D_{new})\)</span></strong><a class="headerlink" href="#menghitung-data-frequency-gain-d-new" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Dnew_frequency</span> <span class="o">=</span> <span class="n">jumlah_data_frequency</span> <span class="o">-</span> <span class="n">infoa_frequency</span>
@@ -2266,6 +2486,192 @@ Pdp
 </div>
 </div>
 </div>
+</section>
+<section id="id1">
+<h3><strong>Tranformasi</strong><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sepal_frequency</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]:</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">middle_width</span><span class="p">):</span>
+    <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Setosa&#39;</span><span class="p">])</span>
+  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">middle_width</span><span class="p">):</span>
+    <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">])</span>
+  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">middle_width</span><span class="p">):</span>
+    <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Virginica&#39;</span><span class="p">])</span>
+<span class="n">trf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data_sepal_frequency</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;kelas&#39;</span><span class="p">])</span>
+<span class="n">trf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-cd25010a-49d4-4b1f-a33f-3258593dd054">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal.length</th>
+      <th>kelas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.1</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.9</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.7</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.6</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.0</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>6.7</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>6.3</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>6.5</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>6.2</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>5.9</td>
+      <td>Setosa</td>
+    </tr>
+  </tbody>
+</table>
+<p>150 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cd25010a-49d4-4b1f-a33f-3258593dd054')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-cd25010a-49d4-4b1f-a33f-3258593dd054 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-cd25010a-49d4-4b1f-a33f-3258593dd054');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h3><strong>Kesimpulan</strong><a class="headerlink" href="#kesimpulan" title="Permalink to this headline">#</a></h3>
+<p>Setelah menghitung semuanya,disini menemukan bahwa split terbaik adalah equal frequency, dengan hasil gain <code class="docutils literal notranslate"> <span class="pre">-0.10078137051873837</span></code>. Sedangkan untuk equal Width menghasilkan gain <code class="docutils literal notranslate"><span class="pre">-0.24365566709549857</span></code>, karena kedua split menghasilkan hasil negatif maka split yang di tentukan <strong>kurang bagus</strong> untuk data diatas.</p>
 </section>
 </section>
 </section>

@@ -55,6 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tranformasi data dan diskritisasi data" href="notebooks2.html" />
     <link rel="prev" title="About Me" href="markdown.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -137,6 +138,13 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="current reference internal" href="#">
    <strong>
     Statistik Deskriptif data
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks2.html">
+   <strong>
+    Tranformasi data dan diskritisasi data
    </strong>
   </a>
  </li>
@@ -346,243 +354,71 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-this-code">
    <strong>
-    Statistik Deskriptif data
+    Run this code
    </strong>
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#run-this-code">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-libary-python">
      <strong>
-      Run this code
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#import-libary-python">
-       <strong>
-        Import libary python
-       </strong>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membuat-data-dari-url">
-     <strong>
-      1. membuat data dari url
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
-       menampilkan data dalam bentuk chart
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
-     <strong>
-      2. Membuat statistik diskriptif dari data (bertipe numerik)
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
-       Dengan Menggunakan libary langsung
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dengan-pencarian-manual-data-diskriptif-positif">
-       Dengan Pencarian Manual data diskriptif Positif
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#data-diskriptif-odp">
-       data diskriptif Odp
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#data-diskriptif-pdp">
-       data diskriptif Pdp
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
-     <strong>
-      3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+      Import libary python
      </strong>
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tranformasi-data-dan-diskritisasi-data">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membuat-data-dari-url">
    <strong>
-    Tranformasi data dan diskritisasi data
+    1. membuat data dari url
    </strong>
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lakukan-proses-diskritisasi-dengan-equal-width-dan-equal-frequency">
-     <strong>
-      1. Lakukan Proses diskritisasi dengan equal width dan equal frequency
-     </strong>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
+     menampilkan data dalam bentuk chart
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#import-data">
-       import data
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-width">
-     <strong>
-      2. diskritisasi data panjang sepal dengan equal Width
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#proses-diskritisasi-dengan-basis-entropy">
-       <strong>
-        Proses diskritisasi dengan basis entropy
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-pertama-width-d-1">
-       <strong>
-        Menghitung Data Pertama Width
-        <span class="math notranslate nohighlight">
-         \((D_1)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-kedua-width-d-2">
-       <strong>
-        Menghitung Data Kedua Width
-        <span class="math notranslate nohighlight">
-         \((D_2)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-keseluruhan-width-d">
-       <strong>
-        Menghitung Data Keseluruhan Width (D)
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-width-info-a">
-       <strong>
-        Menghitung Data Width
-        <span class="math notranslate nohighlight">
-         \(info_a\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-width-gain-d-new">
-       <strong>
-        Menghitung Data Width Gain
-        <span class="math notranslate nohighlight">
-         \((D_{new)}\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tranformasi">
-       <strong>
-        Tranformasi
-       </strong>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency">
-     <strong>
-      3. diskritisasi data panjang sepal dengan equal Frequency
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-pertama-frequency-d-1">
-       <strong>
-        Menghitung Data Pertama Frequency
-        <span class="math notranslate nohighlight">
-         \((D_1)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-kedua-frequency-d-2">
-       <strong>
-        Menghitung Data Kedua Frequency
-        <span class="math notranslate nohighlight">
-         \((D_2)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-keseluruhan-frequency-d">
-       <strong>
-        Menghitung Data Keseluruhan Frequency (D)
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-frequency-info-a">
-       <strong>
-        Menghitung Data Frequency
-        <span class="math notranslate nohighlight">
-         \(info_a\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-frequency-gain-d-new">
-       <strong>
-        Menghitung Data Frequency Gain
-        <span class="math notranslate nohighlight">
-         \((D_{new})\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       <strong>
-        Tranformasi
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#kesimpulan">
-       <strong>
-        Kesimpulan
-       </strong>
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+   <strong>
+    2. Membuat statistik diskriptif dari data (bertipe numerik)
+   </strong>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
+     Dengan Menggunakan libary langsung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-pencarian-manual-data-diskriptif-positif">
+     Dengan Pencarian Manual data diskriptif Positif
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-odp">
+     data diskriptif Odp
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-pdp">
+     data diskriptif Pdp
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+   <strong>
+    3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+   </strong>
+  </a>
  </li>
 </ul>
 
@@ -603,243 +439,71 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-this-code">
    <strong>
-    Statistik Deskriptif data
+    Run this code
    </strong>
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#run-this-code">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-libary-python">
      <strong>
-      Run this code
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#import-libary-python">
-       <strong>
-        Import libary python
-       </strong>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membuat-data-dari-url">
-     <strong>
-      1. membuat data dari url
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
-       menampilkan data dalam bentuk chart
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
-     <strong>
-      2. Membuat statistik diskriptif dari data (bertipe numerik)
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
-       Dengan Menggunakan libary langsung
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dengan-pencarian-manual-data-diskriptif-positif">
-       Dengan Pencarian Manual data diskriptif Positif
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#data-diskriptif-odp">
-       data diskriptif Odp
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#data-diskriptif-pdp">
-       data diskriptif Pdp
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
-     <strong>
-      3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+      Import libary python
      </strong>
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tranformasi-data-dan-diskritisasi-data">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membuat-data-dari-url">
    <strong>
-    Tranformasi data dan diskritisasi data
+    1. membuat data dari url
    </strong>
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lakukan-proses-diskritisasi-dengan-equal-width-dan-equal-frequency">
-     <strong>
-      1. Lakukan Proses diskritisasi dengan equal width dan equal frequency
-     </strong>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menampilkan-data-dalam-bentuk-chart">
+     menampilkan data dalam bentuk chart
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#import-data">
-       import data
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-width">
-     <strong>
-      2. diskritisasi data panjang sepal dengan equal Width
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#proses-diskritisasi-dengan-basis-entropy">
-       <strong>
-        Proses diskritisasi dengan basis entropy
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-pertama-width-d-1">
-       <strong>
-        Menghitung Data Pertama Width
-        <span class="math notranslate nohighlight">
-         \((D_1)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-kedua-width-d-2">
-       <strong>
-        Menghitung Data Kedua Width
-        <span class="math notranslate nohighlight">
-         \((D_2)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-keseluruhan-width-d">
-       <strong>
-        Menghitung Data Keseluruhan Width (D)
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-width-info-a">
-       <strong>
-        Menghitung Data Width
-        <span class="math notranslate nohighlight">
-         \(info_a\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-width-gain-d-new">
-       <strong>
-        Menghitung Data Width Gain
-        <span class="math notranslate nohighlight">
-         \((D_{new)}\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tranformasi">
-       <strong>
-        Tranformasi
-       </strong>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency">
-     <strong>
-      3. diskritisasi data panjang sepal dengan equal Frequency
-     </strong>
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-pertama-frequency-d-1">
-       <strong>
-        Menghitung Data Pertama Frequency
-        <span class="math notranslate nohighlight">
-         \((D_1)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-kedua-frequency-d-2">
-       <strong>
-        Menghitung Data Kedua Frequency
-        <span class="math notranslate nohighlight">
-         \((D_2)\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-keseluruhan-frequency-d">
-       <strong>
-        Menghitung Data Keseluruhan Frequency (D)
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-frequency-info-a">
-       <strong>
-        Menghitung Data Frequency
-        <span class="math notranslate nohighlight">
-         \(info_a\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menghitung-data-frequency-gain-d-new">
-       <strong>
-        Menghitung Data Frequency Gain
-        <span class="math notranslate nohighlight">
-         \((D_{new})\)
-        </span>
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       <strong>
-        Tranformasi
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#kesimpulan">
-       <strong>
-        Kesimpulan
-       </strong>
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-bertipe-numerik">
+   <strong>
+    2. Membuat statistik diskriptif dari data (bertipe numerik)
+   </strong>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-menggunakan-libary-langsung">
+     Dengan Menggunakan libary langsung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dengan-pencarian-manual-data-diskriptif-positif">
+     Dengan Pencarian Manual data diskriptif Positif
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-odp">
+     data diskriptif Odp
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-diskriptif-pdp">
+     data diskriptif Pdp
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mendeskripsikan-skewned-dari-data-setiap-variable-bertipe-numerik">
+   <strong>
+    3. Mendeskripsikan Skewned dari data setiap variable (bertipe numerik)
+   </strong>
+  </a>
  </li>
 </ul>
 
@@ -886,7 +550,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-696493a6-78f0-4b3c-ab5e-662e29fe9428">
+  <div id="df-653ffb6a-e7e5-4e5d-881f-5f342f5d25cb">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1099,7 +763,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-696493a6-78f0-4b3c-ab5e-662e29fe9428')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-653ffb6a-e7e5-4e5d-881f-5f342f5d25cb')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1150,12 +814,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-696493a6-78f0-4b3c-ab5e-662e29fe9428 button.colab-df-convert');
+          document.querySelector('#df-653ffb6a-e7e5-4e5d-881f-5f342f5d25cb button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-696493a6-78f0-4b3c-ab5e-662e29fe9428');
+          const element = document.querySelector('#df-653ffb6a-e7e5-4e5d-881f-5f342f5d25cb');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1409,1329 +1073,12 @@ Pdp
 2.479893820178332
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/notebooks_22_15.png" src="_images/notebooks_22_15.png" />
+<img alt="_images/notebooks_22_14.png" src="_images/notebooks_22_14.png" />
 </div>
 </div>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="tranformasi-data-dan-diskritisasi-data">
-<h1><strong>Tranformasi data dan diskritisasi data</strong><a class="headerlink" href="#tranformasi-data-dan-diskritisasi-data" title="Permalink to this headline">#</a></h1>
-<section id="lakukan-proses-diskritisasi-dengan-equal-width-dan-equal-frequency">
-<h2><strong>1. Lakukan Proses diskritisasi dengan equal width dan equal frequency</strong><a class="headerlink" href="#lakukan-proses-diskritisasi-dengan-equal-width-dan-equal-frequency" title="Permalink to this headline">#</a></h2>
-<section id="import-data">
-<h3>import data<a class="headerlink" href="#import-data" title="Permalink to this headline">#</a></h3>
-<p><strong>Rumus Equal Width :</strong></p>
-<blockquote>
-<div><p>𝓌 = [<span class="math notranslate nohighlight">\(\frac{max - min}{𝓍}\)</span>]</p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
-  <span class="n">𝓌</span>  <span class="o">=</span> <span class="n">Width</span>
-  <span class="nb">max</span> <span class="o">=</span> <span class="n">nilai</span> <span class="n">maximum</span> <span class="n">pada</span> <span class="n">data</span>
-  <span class="nb">min</span> <span class="o">=</span> <span class="n">nilai</span> <span class="n">minimum</span> <span class="n">pada</span> <span class="n">data</span>
-  <span class="n">x</span>   <span class="o">=</span> <span class="n">jumlah</span> <span class="n">kategori</span> <span class="o">/</span> <span class="nb">bin</span> 
-</pre></div>
-</div>
-<p><strong>Rumus Equal Frequency :</strong></p>
-<blockquote>
-<div><p>𝓕req = <span class="math notranslate nohighlight">\(\frac{n}{𝓍}\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
-  <span class="n">𝓕req</span> <span class="o">=</span> <span class="n">frekuensi</span>
-  <span class="n">𝓍</span>    <span class="o">=</span> <span class="n">jumlah</span> <span class="n">kategori</span> <span class="o">/</span> <span class="nb">bin</span>
-  <span class="n">n</span>    <span class="o">=</span> <span class="n">jumlah</span> <span class="n">data</span> <span class="n">pada</span> <span class="nb">list</span> <span class="o">/</span> <span class="n">count</span>
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv&quot;</span><span class="p">)</span>
-<span class="n">data</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-467a5686-1a26-4938-9147-25c307b871d5">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sepal.length</th>
-      <th>sepal.width</th>
-      <th>petal.length</th>
-      <th>petal.width</th>
-      <th>variety</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.6</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>6.7</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.3</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>6.3</td>
-      <td>2.5</td>
-      <td>5.0</td>
-      <td>1.9</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>6.5</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.0</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td>6.2</td>
-      <td>3.4</td>
-      <td>5.4</td>
-      <td>2.3</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>5.9</td>
-      <td>3.0</td>
-      <td>5.1</td>
-      <td>1.8</td>
-      <td>Virginica</td>
-    </tr>
-  </tbody>
-</table>
-<p>150 rows × 5 columns</p>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-467a5686-1a26-4938-9147-25c307b871d5')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-467a5686-1a26-4938-9147-25c307b871d5 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-467a5686-1a26-4938-9147-25c307b871d5');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">binning_Equal_width</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">middle_width</span> <span class="o">=</span> <span class="n">binning_Equal_width</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">right</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Melakukan proses diskritasi dengan Equal Width  </span><span class="si">{}</span><span class="s2"> &lt; dan &lt;= </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">middle_width</span><span class="p">,</span><span class="n">middle_width</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Melakukan proses diskritasi dengan Equal Width  6.1 &lt; dan &lt;= 6.1
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">binning_Equal_frequency</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">middle_frequency</span> <span class="o">=</span> <span class="n">binning_Equal_frequency</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">right</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Melakukan proses diskritasi dengan Equal Frequency  </span><span class="si">{}</span><span class="s2"> &lt; dan &lt;= </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">middle_frequency</span><span class="p">,</span><span class="n">middle_frequency</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Melakukan proses diskritasi dengan Equal Frequency  5.8 &lt; dan &lt;= 5.8
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="diskritisasi-data-panjang-sepal-dengan-equal-width">
-<h2><strong>2. diskritisasi data panjang sepal dengan equal Width</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-width" title="Permalink to this headline">#</a></h2>
-<section id="proses-diskritisasi-dengan-basis-entropy">
-<h3><strong>Proses diskritisasi dengan basis entropy</strong><a class="headerlink" href="#proses-diskritisasi-dengan-basis-entropy" title="Permalink to this headline">#</a></h3>
-<p>Melakukan proses diskritasi dengan Equal Width pertama dengan memasukkan data pada rumus Entropy</p>
-<p><strong>Rumus Entropy :</strong></p>
-<blockquote>
-<div><p><em>Entropy</em><span class="math notranslate nohighlight">\((D_1) = - ∑_{i=1}^{m}p_i log_2 p_i\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span> <span class="p">:</span>
-  <span class="n">D</span>  <span class="o">=</span> <span class="n">himpunan</span> <span class="n">kasu</span>
-  <span class="n">m</span>  <span class="o">=</span> <span class="n">jumlah</span> <span class="n">partisi</span> <span class="n">D</span>
-  <span class="n">pi</span> <span class="o">=</span> <span class="n">proporsi</span> <span class="n">dari</span> <span class="n">Di</span> <span class="n">terhadap</span> <span class="n">D</span>
-</pre></div>
-</div>
-</section>
-<section id="menghitung-data-pertama-width-d-1">
-<h3><strong>Menghitung Data Pertama Width <span class="math notranslate nohighlight">\((D_1)\)</span></strong><a class="headerlink" href="#menghitung-data-pertama-width-d-1" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width1_1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">middle_width</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Setosa&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_width1_2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">middle_width</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_width1_3</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">middle_width</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Virginica&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">jumlah_width1</span> <span class="o">=</span> <span class="n">equal_width1_1</span> <span class="o">+</span><span class="n">equal_width1_2</span> <span class="o">+</span> <span class="n">equal_width1_3</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width1_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width1_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>16
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width1_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>39
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_width1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>55
-</pre></div>
-</div>
-</div>
-</div>
-<p>Pada <em><strong>equal_width1_1</strong></em> memiliki value 0 dan  <span class="math notranslate nohighlight">\(Log_2(0)\)</span> pada bahasa python menggunakan libary math.log2() akan menghasilkan pesan error karena hasilnya undefined maka sebagai alternative pada <em><strong>data_width1_1</strong></em> akan diisi dengan <em><strong>equal_width1_1</strong></em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width1_1</span> <span class="o">=</span> <span class="n">equal_width1_1</span>
-<span class="n">data_width1_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width1_2</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_width1_2</span><span class="o">/</span><span class="n">jumlah_width1</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_width1_2</span><span class="o">/</span><span class="n">jumlah_width1</span><span class="p">)</span>
-<span class="n">data_width1_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5182137348435374
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width1_3</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_width1_3</span><span class="o">/</span><span class="n">jumlah_width1</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_width1_3</span><span class="o">/</span><span class="n">jumlah_width1</span><span class="p">)</span>
-<span class="n">data_width1_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.35167895076061895
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_data_width1</span> <span class="o">=</span> <span class="n">data_width1_1</span> <span class="o">+</span><span class="n">data_width1_2</span><span class="o">+</span><span class="n">data_width1_3</span>
-<span class="n">jumlah_data_width1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8698926856041563
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-kedua-width-d-2">
-<h3><strong>Menghitung Data Kedua Width <span class="math notranslate nohighlight">\((D_2)\)</span></strong><a class="headerlink" href="#menghitung-data-kedua-width-d-2" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width2_1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_width</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Setosa&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_width2_2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_width</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_width2_3</span> <span class="o">=</span>  <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_width</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Virginica&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width2_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>50
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width2_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_width2_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_width2</span> <span class="o">=</span> <span class="n">equal_width2_1</span><span class="o">+</span><span class="n">equal_width2_2</span><span class="o">+</span><span class="n">equal_width2_3</span>
-<span class="n">jumlah_width2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>95
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width2_1</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_width2_1</span><span class="o">/</span><span class="n">jumlah_width2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_width2_1</span><span class="o">/</span><span class="n">jumlah_width2</span><span class="p">)</span>
-<span class="n">data_width2_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.48736811502959115
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width2_2</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_width2_2</span><span class="o">/</span><span class="n">jumlah_width2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_width2_2</span><span class="o">/</span><span class="n">jumlah_width2</span><span class="p">)</span>
-<span class="n">data_width2_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5305405692709546
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width2_3</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_width2_3</span><span class="o">/</span><span class="n">jumlah_width2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_width2_3</span><span class="o">/</span><span class="n">jumlah_width2</span><span class="p">)</span>
-<span class="n">data_width2_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.3601543567013701
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_data_width2</span> <span class="o">=</span> <span class="n">data_width2_1</span> <span class="o">+</span> <span class="n">data_width2_2</span> <span class="o">+</span> <span class="n">data_width2_3</span>
-<span class="n">jumlah_data_width2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.378063041001916
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-keseluruhan-width-d">
-<h3><strong>Menghitung Data Keseluruhan Width (D)</strong><a class="headerlink" href="#menghitung-data-keseluruhan-width-d" title="Permalink to this headline">#</a></h3>
-<p>Untuk menghitung data keseluruhan, juga memakai rumus Entropy</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlahkeselurusah_width</span> <span class="o">=</span> <span class="n">jumlah_width1</span> <span class="o">+</span><span class="n">jumlah_width2</span>
-<span class="n">jumlahkeselurusah_width</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>150
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_width_1</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">jumlah_width1</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">jumlah_width1</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span>
-<span class="n">data_width_2</span> <span class="o">=-</span> <span class="p">(</span><span class="n">jumlah_width2</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">jumlah_width2</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span>
-<span class="n">jumlah_data_width</span> <span class="o">=</span> <span class="n">data_width_1</span> <span class="o">+</span><span class="n">data_width_2</span>
-<span class="n">jumlah_data_width</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9480782435939055
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-width-info-a">
-<h3><strong>Menghitung Data Width <span class="math notranslate nohighlight">\(info_a\)</span></strong><a class="headerlink" href="#menghitung-data-width-info-a" title="Permalink to this headline">#</a></h3>
-<p><strong>Rumus :</strong></p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(info_a = \frac{|D_1|}{|D|} Entropy(D_1) + \frac{|D_2|}{|D|} Entropy(D_2)\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
-  <span class="n">D1</span><span class="o">/</span><span class="n">D2</span>      <span class="o">=</span> <span class="n">jumlah</span> <span class="n">data</span>
-  <span class="n">D</span>          <span class="o">=</span> <span class="n">jumlah</span> <span class="n">keseluruhan</span> <span class="n">data</span>
-  <span class="n">Entropy</span><span class="p">(</span><span class="n">D</span><span class="p">)</span> <span class="o">=</span> <span class="n">hasil</span> <span class="n">entropy</span> <span class="n">data</span> 
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">infoa_width</span> <span class="o">=</span> <span class="p">((</span><span class="n">jumlah_width1</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span><span class="o">*</span><span class="n">jumlah_data_width1</span><span class="p">)</span> <span class="o">+</span> <span class="p">((</span><span class="n">jumlah_width2</span><span class="o">/</span><span class="n">jumlahkeselurusah_width</span><span class="p">)</span> <span class="o">*</span><span class="n">jumlah_data_width2</span><span class="p">)</span>
-<span class="n">infoa_width</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.191733910689404
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-width-gain-d-new">
-<h3><strong>Menghitung Data Width Gain <span class="math notranslate nohighlight">\((D_{new)}\)</span></strong><a class="headerlink" href="#menghitung-data-width-gain-d-new" title="Permalink to this headline">#</a></h3>
-<p><strong>Rumus Gain<span class="math notranslate nohighlight">\((D_1)\)</span> :</strong></p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(Gain(E_{new}) = E_{initial} - E_{new}\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
-  <span class="n">Gain</span>     <span class="o">=</span> <span class="n">gain</span>
-  <span class="n">Einitial</span> <span class="o">=</span> <span class="n">jumlah_data_width</span>
-  <span class="n">Enew</span>     <span class="o">=</span> <span class="n">infoa</span>
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gain_width</span> <span class="o">=</span> <span class="n">jumlah_data_width</span> <span class="o">-</span> <span class="n">infoa_width</span>
-<span class="n">gain_width</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.24365566709549857
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="tranformasi">
-<h3><strong>Tranformasi</strong><a class="headerlink" href="#tranformasi" title="Permalink to this headline">#</a></h3>
-<p>untuk tranformasi, data yang kurang dari <strong>middle_width</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Setosa</span></code>, lalu untuk yang sama dengan <strong>middle_width</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">VersiColor</span></code>,sedangkan untuk yang lebih dari <strong>middle_width</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Virginica</span></code></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sepal_width</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]:</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">middle_width</span><span class="p">):</span>
-    <span class="n">data_sepal_width</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Setosa&#39;</span><span class="p">])</span>
-  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">middle_width</span><span class="p">):</span>
-    <span class="n">data_sepal_width</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">])</span>
-  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">middle_width</span><span class="p">):</span>
-    <span class="n">data_sepal_width</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Virginica&#39;</span><span class="p">])</span>
-<span class="n">tf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data_sepal_width</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;kelas&#39;</span><span class="p">])</span>
-<span class="n">tf</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-1b5216fe-ca03-485e-be3f-42941ee89148">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sepal.length</th>
-      <th>kelas</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>5.1</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4.9</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.7</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.6</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5.0</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>6.7</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>6.3</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>6.5</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td>6.2</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>5.9</td>
-      <td>Setosa</td>
-    </tr>
-  </tbody>
-</table>
-<p>150 rows × 2 columns</p>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1b5216fe-ca03-485e-be3f-42941ee89148')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-1b5216fe-ca03-485e-be3f-42941ee89148 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1b5216fe-ca03-485e-be3f-42941ee89148');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-</section>
-</section>
-<section id="diskritisasi-data-panjang-sepal-dengan-equal-frequency">
-<h2><strong>3. diskritisasi data panjang sepal dengan equal Frequency</strong><a class="headerlink" href="#diskritisasi-data-panjang-sepal-dengan-equal-frequency" title="Permalink to this headline">#</a></h2>
-<p>Melakukan proses diskritasi dengan Equal Frequency pertama dengan memasukkan data pada rumus Entropy</p>
-<p><strong>Rumus Entropy :</strong></p>
-<blockquote>
-<div><p><em>Entropy</em><span class="math notranslate nohighlight">\((D_1) = - ∑_{i=1}^{m}p_i log_2 p_i\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span> <span class="p">:</span>
-  <span class="n">D</span>  <span class="o">=</span> <span class="n">himpunan</span> <span class="n">kasu</span>
-  <span class="n">m</span>  <span class="o">=</span> <span class="n">jumlah</span> <span class="n">partisi</span> <span class="n">D</span>
-  <span class="n">pi</span> <span class="o">=</span> <span class="n">proporsi</span> <span class="n">dari</span> <span class="n">Di</span> <span class="n">terhadap</span> <span class="n">D</span>
-</pre></div>
-</div>
-<section id="menghitung-data-pertama-frequency-d-1">
-<h3><strong>Menghitung Data Pertama Frequency <span class="math notranslate nohighlight">\((D_1)\)</span></strong><a class="headerlink" href="#menghitung-data-pertama-frequency-d-1" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency1_1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Setosa&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_frequency1_2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_frequency1_3</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Virginica&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">jumlah_frequency1</span> <span class="o">=</span> <span class="n">equal_frequency1_1</span> <span class="o">+</span><span class="n">equal_frequency1_2</span> <span class="o">+</span> <span class="n">equal_frequency1_3</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency1_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency1_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>26
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency1_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>44
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_frequency1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>70
-</pre></div>
-</div>
-</div>
-</div>
-<p>Pada <em><strong>equal_frequency1_1</strong></em> memiliki value 0 dan  <span class="math notranslate nohighlight">\(Log_2(0)\)</span> pada bahasa python menggunakan libary math.log2() akan menghasilkan pesan error karena hasilnya undefined maka sebagai alternative pada <em><strong>data_frequency1_1</strong></em> akan diisi dengan <em><strong>equal_frequency1_1</strong></em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency1_1</span> <span class="o">=</span> <span class="n">equal_frequency1_1</span>
-<span class="n">data_frequency1_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency1_2</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_frequency1_2</span><span class="o">/</span><span class="n">jumlah_frequency1</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_frequency1_2</span><span class="o">/</span><span class="n">jumlah_frequency1</span><span class="p">)</span>
-<span class="n">data_frequency1_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5307132252700104
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency1_3</span> <span class="o">=</span>  <span class="o">-</span><span class="p">(</span><span class="n">equal_frequency1_3</span><span class="o">/</span><span class="n">jumlah_frequency1</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_frequency1_3</span><span class="o">/</span><span class="n">jumlah_frequency1</span><span class="p">)</span>
-<span class="n">data_frequency1_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.42104945036482067
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_data_frequency1</span> <span class="o">=</span> <span class="n">data_frequency1_1</span> <span class="o">+</span> <span class="n">data_frequency1_2</span> <span class="o">+</span> <span class="n">data_frequency1_3</span>
-<span class="n">jumlah_data_frequency1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9517626756348311
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-kedua-frequency-d-2">
-<h3><strong>Menghitung Data Kedua Frequency <span class="math notranslate nohighlight">\((D_2)\)</span></strong><a class="headerlink" href="#menghitung-data-kedua-frequency-d-2" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency2_1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Setosa&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_frequency2_2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">equal_frequency2_3</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">middle_frequency</span> <span class="p">)</span><span class="o">&amp;</span><span class="p">(</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;variety&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Virginica&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">jumlah_frequency2</span> <span class="o">=</span> <span class="n">equal_frequency2_1</span> <span class="o">+</span><span class="n">equal_frequency2_2</span> <span class="o">+</span> <span class="n">equal_frequency2_3</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency2_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>50
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency2_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>24
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">equal_frequency2_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_frequency2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>80
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency2_1</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_frequency2_1</span><span class="o">/</span><span class="n">jumlah_frequency2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_frequency2_1</span><span class="o">/</span><span class="n">jumlah_frequency2</span><span class="p">)</span>
-<span class="n">data_frequency2_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.42379494069539847
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency2_2</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_frequency2_2</span><span class="o">/</span><span class="n">jumlah_frequency2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_frequency2_2</span><span class="o">/</span><span class="n">jumlah_frequency2</span><span class="p">)</span>
-<span class="n">data_frequency2_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5210896782498619
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency2_3</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">equal_frequency2_3</span><span class="o">/</span><span class="n">jumlah_frequency2</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">equal_frequency2_3</span><span class="o">/</span><span class="n">jumlah_frequency2</span><span class="p">)</span>
-<span class="n">data_frequency2_3</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.28027241956246546
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_data_frequency2</span> <span class="o">=</span> <span class="n">data_frequency2_1</span> <span class="o">+</span> <span class="n">data_frequency2_2</span> <span class="o">+</span><span class="n">data_frequency2_3</span>
-<span class="n">jumlah_data_frequency2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.2251570385077257
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-keseluruhan-frequency-d">
-<h3><strong>Menghitung Data Keseluruhan Frequency (D)</strong><a class="headerlink" href="#menghitung-data-keseluruhan-frequency-d" title="Permalink to this headline">#</a></h3>
-<p>Untuk menghitung data keseluruhan, juga memakai rumus Entropy</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlahkeselurusah_frequency</span> <span class="o">=</span> <span class="n">jumlah_frequency1</span> <span class="o">+</span> <span class="n">jumlah_frequency2</span>
-<span class="n">jumlahkeselurusah_frequency</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>150
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency_1</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">jumlah_frequency1</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">jumlah_frequency1</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span>
-<span class="n">data_frequency_1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5131166476570933
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_frequency_2</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">jumlah_frequency2</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">jumlah_frequency2</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span>
-<span class="n">data_frequency_2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.4836749843245432
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jumlah_data_frequency</span> <span class="o">=</span> <span class="n">data_frequency_1</span> <span class="o">+</span><span class="n">data_frequency_2</span>
-<span class="n">jumlah_data_frequency</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9967916319816366
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-frequency-info-a">
-<h3><strong>Menghitung Data Frequency <span class="math notranslate nohighlight">\(info_a\)</span></strong><a class="headerlink" href="#menghitung-data-frequency-info-a" title="Permalink to this headline">#</a></h3>
-<p><strong>Rumus :</strong></p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(info_a = \frac{|D_1|}{|D|} Entropy(D_1) + \frac{|D_2|}{|D|} Entropy(D_2)\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
-  <span class="n">D1</span><span class="o">/</span><span class="n">D2</span>      <span class="o">=</span> <span class="n">jumlah</span> <span class="n">data</span>
-  <span class="n">D</span>          <span class="o">=</span> <span class="n">jumlah</span> <span class="n">keseluruhan</span> <span class="n">data</span>
-  <span class="n">Entropy</span><span class="p">(</span><span class="n">D</span><span class="p">)</span> <span class="o">=</span> <span class="n">hasil</span> <span class="n">entropy</span> <span class="n">data</span> 
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">infoa_frequency</span> <span class="o">=</span> <span class="p">((</span><span class="n">jumlah_frequency1</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span><span class="o">*</span><span class="n">jumlah_data_frequency1</span><span class="p">)</span> <span class="o">+</span> <span class="p">((</span><span class="n">jumlah_frequency2</span><span class="o">/</span><span class="n">jumlahkeselurusah_frequency</span><span class="p">)</span><span class="o">*</span><span class="n">jumlah_data_frequency2</span><span class="p">)</span>
-<span class="n">infoa_frequency</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.097573002500375
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="menghitung-data-frequency-gain-d-new">
-<h3><strong>Menghitung Data Frequency Gain <span class="math notranslate nohighlight">\((D_{new})\)</span></strong><a class="headerlink" href="#menghitung-data-frequency-gain-d-new" title="Permalink to this headline">#</a></h3>
-<p><strong>Rumus Gain<span class="math notranslate nohighlight">\((D_1)\)</span> :</strong></p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(Gain(E_{new}) = E_{initial} - E_{new}\)</span></p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ket</span><span class="p">:</span>
-  <span class="n">Gain</span>     <span class="o">=</span> <span class="n">gain</span>
-  <span class="n">Einitial</span> <span class="o">=</span> <span class="n">jumlah_data_frequency</span>
-  <span class="n">Enew</span>     <span class="o">=</span> <span class="n">infoa</span>
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Dnew_frequency</span> <span class="o">=</span> <span class="n">jumlah_data_frequency</span> <span class="o">-</span> <span class="n">infoa_frequency</span>
-<span class="n">Dnew_frequency</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.10078137051873837
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id1">
-<h3><strong>Tranformasi</strong><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
-<p>untuk tranformasi, data yang kurang dari <strong>middle_frequency</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Setosa</span></code>, lalu untuk yang sama dengan <strong>middle_frequency</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">VersiColor</span></code>,sedangkan untuk yang lebih dari <strong>middle_frequency</strong> akan di kelompokkan menjadi kelas <code class="docutils literal notranslate"><span class="pre">Virginica</span></code></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sepal_frequency</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]:</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">middle_frequency</span><span class="p">):</span>
-    <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Setosa&#39;</span><span class="p">])</span>
-  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">middle_frequency</span><span class="p">):</span>
-    <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Versicolor&#39;</span><span class="p">])</span>
-  <span class="k">elif</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">middle_frequency</span><span class="p">):</span>
-    <span class="n">data_sepal_frequency</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Virginica&#39;</span><span class="p">])</span>
-<span class="n">trf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data_sepal_frequency</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;kelas&#39;</span><span class="p">])</span>
-<span class="n">trf</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-66e76b59-d2ab-4154-96ef-2c18e1f20c55">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sepal.length</th>
-      <th>kelas</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>5.1</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4.9</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.7</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.6</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5.0</td>
-      <td>Setosa</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>6.7</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>6.3</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>6.5</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td>6.2</td>
-      <td>Virginica</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>5.9</td>
-      <td>Virginica</td>
-    </tr>
-  </tbody>
-</table>
-<p>150 rows × 2 columns</p>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-66e76b59-d2ab-4154-96ef-2c18e1f20c55')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-66e76b59-d2ab-4154-96ef-2c18e1f20c55 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-66e76b59-d2ab-4154-96ef-2c18e1f20c55');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-</section>
-<hr class="docutils" />
-<section id="kesimpulan">
-<h3><strong>Kesimpulan</strong><a class="headerlink" href="#kesimpulan" title="Permalink to this headline">#</a></h3>
-<p>Setelah menghitung semuanya,disini menemukan bahwa split terbaik adalah equal frequency, dengan hasil gain <code class="docutils literal notranslate"> <span class="pre">-0.10078137051873837</span></code>. Sedangkan untuk equal Width menghasilkan gain <code class="docutils literal notranslate"><span class="pre">-0.24365566709549857</span></code>, karena kedua split menghasilkan hasil negatif maka split yang di tentukan <strong>kurang bagus</strong> untuk data diatas.</p>
-</section>
 </section>
 </section>
 
@@ -2768,6 +1115,13 @@ Pdp
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">About Me</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="notebooks2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Tranformasi data dan diskritisasi data</strong></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

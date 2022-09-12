@@ -589,7 +589,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0eab8c8e-a42c-4cbb-b227-309f4004899f">
+  <div id="df-d554fab7-9b60-41b5-a2e1-c7c0230f3426">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -709,7 +709,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0eab8c8e-a42c-4cbb-b227-309f4004899f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d554fab7-9b60-41b5-a2e1-c7c0230f3426')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -760,12 +760,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0eab8c8e-a42c-4cbb-b227-309f4004899f button.colab-df-convert');
+          document.querySelector('#df-d554fab7-9b60-41b5-a2e1-c7c0230f3426 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0eab8c8e-a42c-4cbb-b227-309f4004899f');
+          const element = document.querySelector('#df-d554fab7-9b60-41b5-a2e1-c7c0230f3426');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -808,13 +808,13 @@ title="Print to PDF"
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;category_sepal_width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;category_petal_length&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;category_petal_width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;petal.width&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
-<span class="n">data</span><span class="p">[[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;category_sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">,</span><span class="s1">&#39;category_sepal_width&#39;</span><span class="p">]]</span>
+<span class="n">data</span><span class="p">[[</span><span class="s1">&#39;category_sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;category_sepal_width&#39;</span><span class="p">,</span><span class="s1">&#39;category_petal_length&#39;</span><span class="p">,</span><span class="s1">&#39;category_petal_width&#39;</span><span class="p">,</span><span class="s1">&#39;variety&#39;</span><span class="p">]]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0c6dae2d-e33f-4eab-8819-0d9a32763fdb">
+  <div id="df-35087853-060d-4f02-83f2-27db86adc75d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -834,47 +834,53 @@ title="Print to PDF"
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>sepal.length</th>
       <th>category_sepal_length</th>
-      <th>sepal.width</th>
       <th>category_sepal_width</th>
+      <th>category_petal_length</th>
+      <th>category_petal_width</th>
+      <th>variety</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>5.1</td>
       <td>A</td>
-      <td>3.5</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>4.9</td>
       <td>A</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4.7</td>
       <td>A</td>
-      <td>3.2</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4.6</td>
       <td>A</td>
-      <td>3.1</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5.0</td>
       <td>A</td>
-      <td>3.6</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>...</th>
@@ -882,47 +888,53 @@ title="Print to PDF"
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>145</th>
-      <td>6.7</td>
       <td>B</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>146</th>
-      <td>6.3</td>
       <td>B</td>
-      <td>2.5</td>
       <td>A</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>147</th>
-      <td>6.5</td>
       <td>B</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>148</th>
-      <td>6.2</td>
       <td>B</td>
-      <td>3.4</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>149</th>
-      <td>5.9</td>
       <td>B</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
   </tbody>
 </table>
-<p>150 rows × 4 columns</p>
+<p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0c6dae2d-e33f-4eab-8819-0d9a32763fdb')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-35087853-060d-4f02-83f2-27db86adc75d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -973,12 +985,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0c6dae2d-e33f-4eab-8819-0d9a32763fdb button.colab-df-convert');
+          document.querySelector('#df-35087853-060d-4f02-83f2-27db86adc75d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0c6dae2d-e33f-4eab-8819-0d9a32763fdb');
+          const element = document.querySelector('#df-35087853-060d-4f02-83f2-27db86adc75d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1021,13 +1033,13 @@ title="Print to PDF"
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;category_sepal_width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;category_petal_length&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;category_petal_width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;petal.width&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
-<span class="n">data</span><span class="p">[[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">,</span><span class="s1">&#39;category_sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">,</span><span class="s1">&#39;category_sepal_width&#39;</span><span class="p">]]</span>
+<span class="n">data</span><span class="p">[[</span><span class="s1">&#39;category_sepal_length&#39;</span><span class="p">,</span><span class="s1">&#39;category_sepal_width&#39;</span><span class="p">,</span><span class="s1">&#39;category_petal_length&#39;</span><span class="p">,</span><span class="s1">&#39;category_petal_width&#39;</span><span class="p">,</span><span class="s1">&#39;variety&#39;</span><span class="p">]]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0db11a12-bd4b-4d2a-94d3-e5e670fa567b">
+  <div id="df-821cf4d3-789b-4af8-95c3-caebcdf8ed12">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1047,47 +1059,53 @@ title="Print to PDF"
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>sepal.length</th>
       <th>category_sepal_length</th>
-      <th>sepal.width</th>
       <th>category_sepal_width</th>
+      <th>category_petal_length</th>
+      <th>category_petal_width</th>
+      <th>variety</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>5.1</td>
       <td>A</td>
-      <td>3.5</td>
       <td>C</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>4.9</td>
       <td>A</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4.7</td>
       <td>A</td>
-      <td>3.2</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4.6</td>
       <td>A</td>
-      <td>3.1</td>
       <td>B</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5.0</td>
       <td>A</td>
-      <td>3.6</td>
       <td>C</td>
+      <td>A</td>
+      <td>A</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1095,47 +1113,53 @@ title="Print to PDF"
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>145</th>
-      <td>6.7</td>
       <td>C</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>146</th>
-      <td>6.3</td>
       <td>B</td>
-      <td>2.5</td>
       <td>A</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>147</th>
-      <td>6.5</td>
       <td>C</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>148</th>
-      <td>6.2</td>
       <td>B</td>
-      <td>3.4</td>
       <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>149</th>
-      <td>5.9</td>
       <td>B</td>
-      <td>3.0</td>
       <td>B</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Virginica</td>
     </tr>
   </tbody>
 </table>
-<p>150 rows × 4 columns</p>
+<p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0db11a12-bd4b-4d2a-94d3-e5e670fa567b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-821cf4d3-789b-4af8-95c3-caebcdf8ed12')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1186,12 +1210,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0db11a12-bd4b-4d2a-94d3-e5e670fa567b button.colab-df-convert');
+          document.querySelector('#df-821cf4d3-789b-4af8-95c3-caebcdf8ed12 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0db11a12-bd4b-4d2a-94d3-e5e670fa567b');
+          const element = document.querySelector('#df-821cf4d3-789b-4af8-95c3-caebcdf8ed12');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1225,7 +1249,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1c0d8516-1f0e-4d51-aea3-7a0caa61024e">
+  <div id="df-f72788e3-23f7-4d72-9b0e-f786cc0d97fc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1309,7 +1333,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1c0d8516-1f0e-4d51-aea3-7a0caa61024e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f72788e3-23f7-4d72-9b0e-f786cc0d97fc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1360,12 +1384,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1c0d8516-1f0e-4d51-aea3-7a0caa61024e button.colab-df-convert');
+          document.querySelector('#df-f72788e3-23f7-4d72-9b0e-f786cc0d97fc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1c0d8516-1f0e-4d51-aea3-7a0caa61024e');
+          const element = document.querySelector('#df-f72788e3-23f7-4d72-9b0e-f786cc0d97fc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>UTS &#8212; Fikri Ainun Najib</title>
+    <title>UTS Data Mining &#8212; Fikri Ainun Najib</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -168,7 +168,9 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   UTS
+   <strong>
+    UTS Data Mining
+   </strong>
   </a>
  </li>
 </ul>
@@ -488,7 +490,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>UTS</h1>
+                <h1>UTS Data Mining</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -610,8 +612,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="uts">
-<h1>UTS<a class="headerlink" href="#uts" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="uts-data-mining">
+<h1><strong>UTS Data Mining</strong><a class="headerlink" href="#uts-data-mining" title="Permalink to this headline">#</a></h1>
 <section id="klasifikasi-data-pada-dataset-breats-cancer">
 <h2>Klasifikasi Data Pada Dataset Breats Cancer<a class="headerlink" href="#klasifikasi-data-pada-dataset-breats-cancer" title="Permalink to this headline">#</a></h2>
 <p>Lakukan analisa terhadap data pada
@@ -646,14 +648,15 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/LALA09-erha/datamining/gh-pages/dataR2.csv&quot;</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/LALA09-erha/Python-StrukturData/master/dataR2.csv&quot;</span><span class="p">)</span>
+<span class="n">data_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/LALA09-erha/Python-StrukturData/master/dataR2.csv&quot;</span><span class="p">)</span>
+<span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3cf3a2db-5090-42e1-a37b-488b37dfaf8c">
+  <div id="df-145a2c4e-aefa-4c72-b6c7-b5481a0fcbef">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -751,10 +754,89 @@ title="Print to PDF"
       <td>773.920</td>
       <td>1</td>
     </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>45</td>
+      <td>26.850000</td>
+      <td>92</td>
+      <td>3.330</td>
+      <td>0.755688</td>
+      <td>54.6800</td>
+      <td>12.100000</td>
+      <td>10.96000</td>
+      <td>268.230</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>62</td>
+      <td>26.840000</td>
+      <td>100</td>
+      <td>4.530</td>
+      <td>1.117400</td>
+      <td>12.4500</td>
+      <td>21.420000</td>
+      <td>7.32000</td>
+      <td>330.160</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>65</td>
+      <td>32.050000</td>
+      <td>97</td>
+      <td>5.730</td>
+      <td>1.370998</td>
+      <td>61.4800</td>
+      <td>22.540000</td>
+      <td>10.33000</td>
+      <td>314.050</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>72</td>
+      <td>25.590000</td>
+      <td>82</td>
+      <td>2.820</td>
+      <td>0.570392</td>
+      <td>24.9600</td>
+      <td>33.750000</td>
+      <td>3.27000</td>
+      <td>392.460</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>86</td>
+      <td>27.180000</td>
+      <td>138</td>
+      <td>19.910</td>
+      <td>6.777364</td>
+      <td>90.2800</td>
+      <td>14.110000</td>
+      <td>4.35000</td>
+      <td>90.090</td>
+      <td>2</td>
+    </tr>
   </tbody>
 </table>
+<p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3cf3a2db-5090-42e1-a37b-488b37dfaf8c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-145a2c4e-aefa-4c72-b6c7-b5481a0fcbef')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -805,12 +887,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3cf3a2db-5090-42e1-a37b-488b37dfaf8c button.colab-df-convert');
+          document.querySelector('#df-145a2c4e-aefa-4c72-b6c7-b5481a0fcbef button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3cf3a2db-5090-42e1-a37b-488b37dfaf8c');
+          const element = document.querySelector('#df-145a2c4e-aefa-4c72-b6c7-b5481a0fcbef');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -835,14 +917,14 @@ title="Print to PDF"
 <h3>Ubah Label  1=Healthy controls dan 2=Patients<a class="headerlink" href="#ubah-label-1-healthy-controls-dan-2-patients" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Classification&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Classification&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">({</span><span class="mi">1</span><span class="p">:</span><span class="s1">&#39;Healthy controls&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s1">&#39;Patients&#39;</span><span class="p">}</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
-<span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_1</span><span class="p">[</span><span class="s1">&#39;Classification&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_1</span><span class="p">[</span><span class="s1">&#39;Classification&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">({</span><span class="mi">1</span><span class="p">:</span><span class="s1">&#39;Healthy controls&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s1">&#39;Patients&#39;</span><span class="p">}</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+<span class="n">data_1</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0fb7acd4-0699-4564-8d2a-dffa84cfcc5f">
+  <div id="df-516a29fc-159b-4e42-919e-32684a0c2f62">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1022,7 +1104,7 @@ title="Print to PDF"
 </table>
 <p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0fb7acd4-0699-4564-8d2a-dffa84cfcc5f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-516a29fc-159b-4e42-919e-32684a0c2f62')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1073,12 +1155,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0fb7acd4-0699-4564-8d2a-dffa84cfcc5f button.colab-df-convert');
+          document.querySelector('#df-516a29fc-159b-4e42-919e-32684a0c2f62 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0fb7acd4-0699-4564-8d2a-dffa84cfcc5f');
+          const element = document.querySelector('#df-516a29fc-159b-4e42-919e-32684a0c2f62');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1138,7 +1220,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b3e8773a-c0d8-49fc-be5d-2714896e1678">
+  <div id="df-3cd0d8b4-a959-4dae-85e4-25d2b87460a0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1233,7 +1315,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b3e8773a-c0d8-49fc-be5d-2714896e1678')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3cd0d8b4-a959-4dae-85e4-25d2b87460a0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1284,12 +1366,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b3e8773a-c0d8-49fc-be5d-2714896e1678 button.colab-df-convert');
+          document.querySelector('#df-3cd0d8b4-a959-4dae-85e4-25d2b87460a0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b3e8773a-c0d8-49fc-be5d-2714896e1678');
+          const element = document.querySelector('#df-3cd0d8b4-a959-4dae-85e4-25d2b87460a0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1320,37 +1402,12 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;],
-      dtype=object)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2])
 </pre></div>
 </div>
 </div>
@@ -1397,12 +1454,8 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Patients&#39;, &#39;Healthy controls&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Healthy controls&#39;, &#39;Patients&#39;, &#39;Healthy controls&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;, &#39;Healthy controls&#39;, &#39;Healthy controls&#39;,
-       &#39;Healthy controls&#39;, &#39;Healthy controls&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Healthy controls&#39;, &#39;Patients&#39;, &#39;Patients&#39;, &#39;Patients&#39;,
-       &#39;Patients&#39;, &#39;Patients&#39;], dtype=object)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 1, 2, 2, 1, 2, 1, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2,
+       2])
 </pre></div>
 </div>
 </div>
@@ -1520,7 +1573,7 @@ cv_scores mean:0.4829710144927536
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8bce5d80-e64d-4baf-aef6-568740808fa6">
+  <div id="df-d69ab6cb-a3ff-4f38-84e0-d7f285b4952b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1564,7 +1617,7 @@ cv_scores mean:0.4829710144927536
       <td>9.702400</td>
       <td>7.99585</td>
       <td>417.114</td>
-      <td>Healthy controls</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1577,7 +1630,7 @@ cv_scores mean:0.4829710144927536
       <td>5.429285</td>
       <td>4.06405</td>
       <td>468.786</td>
-      <td>Healthy controls</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1590,7 +1643,7 @@ cv_scores mean:0.4829710144927536
       <td>22.432040</td>
       <td>9.27715</td>
       <td>554.697</td>
-      <td>Healthy controls</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1603,7 +1656,7 @@ cv_scores mean:0.4829710144927536
       <td>7.169560</td>
       <td>12.76600</td>
       <td>928.220</td>
-      <td>Healthy controls</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1616,7 +1669,7 @@ cv_scores mean:0.4829710144927536
       <td>4.819240</td>
       <td>10.57635</td>
       <td>773.920</td>
-      <td>Healthy controls</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1642,7 +1695,7 @@ cv_scores mean:0.4829710144927536
       <td>12.100000</td>
       <td>10.96000</td>
       <td>268.230</td>
-      <td>Patients</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>112</th>
@@ -1655,7 +1708,7 @@ cv_scores mean:0.4829710144927536
       <td>21.420000</td>
       <td>7.32000</td>
       <td>330.160</td>
-      <td>Patients</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>113</th>
@@ -1668,7 +1721,7 @@ cv_scores mean:0.4829710144927536
       <td>22.540000</td>
       <td>10.33000</td>
       <td>314.050</td>
-      <td>Patients</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>114</th>
@@ -1681,7 +1734,7 @@ cv_scores mean:0.4829710144927536
       <td>33.750000</td>
       <td>3.27000</td>
       <td>392.460</td>
-      <td>Patients</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>115</th>
@@ -1694,13 +1747,13 @@ cv_scores mean:0.4829710144927536
       <td>14.110000</td>
       <td>4.35000</td>
       <td>90.090</td>
-      <td>Patients</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
 <p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8bce5d80-e64d-4baf-aef6-568740808fa6')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d69ab6cb-a3ff-4f38-84e0-d7f285b4952b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1751,12 +1804,12 @@ cv_scores mean:0.4829710144927536
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8bce5d80-e64d-4baf-aef6-568740808fa6 button.colab-df-convert');
+          document.querySelector('#df-d69ab6cb-a3ff-4f38-84e0-d7f285b4952b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8bce5d80-e64d-4baf-aef6-568740808fa6');
+          const element = document.querySelector('#df-d69ab6cb-a3ff-4f38-84e0-d7f285b4952b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1789,6 +1842,44 @@ cv_scores mean:0.4829710144927536
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">value_counts</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;bound method DataFrame.value_counts of      Age        BMI  Glucose  Insulin      HOMA   Leptin  Adiponectin  \
+0     48  23.500000       70    2.707  0.467409   8.8071     9.702400   
+1     83  20.690495       92    3.115  0.706897   8.8438     5.429285   
+2     82  23.124670       91    4.498  1.009651  17.9393    22.432040   
+3     68  21.367521       77    3.226  0.612725   9.8827     7.169560   
+4     86  21.111111       92    3.549  0.805386   6.6994     4.819240   
+..   ...        ...      ...      ...       ...      ...          ...   
+111   45  26.850000       92    3.330  0.755688  54.6800    12.100000   
+112   62  26.840000      100    4.530  1.117400  12.4500    21.420000   
+113   65  32.050000       97    5.730  1.370998  61.4800    22.540000   
+114   72  25.590000       82    2.820  0.570392  24.9600    33.750000   
+115   86  27.180000      138   19.910  6.777364  90.2800    14.110000   
+
+     Resistin    MCP.1  Classification  
+0     7.99585  417.114               1  
+1     4.06405  468.786               1  
+2     9.27715  554.697               1  
+3    12.76600  928.220               1  
+4    10.57635  773.920               1  
+..        ...      ...             ...  
+111  10.96000  268.230               2  
+112   7.32000  330.160               2  
+113  10.33000  314.050               2  
+114   3.27000  392.460               2  
+115   4.35000   90.090               2  
+
+[116 rows x 10 columns]&gt;
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="membuat-grafik-decision-tree-dari-hasil-klasifikasi">
 <h3>Membuat Grafik Decision Tree dari hasil Klasifikasi<a class="headerlink" href="#membuat-grafik-decision-tree-dari-hasil-klasifikasi" title="Permalink to this headline">#</a></h3>
@@ -1800,7 +1891,7 @@ cv_scores mean:0.4829710144927536
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/notebooks6_39_0.png" src="_images/notebooks6_39_0.png" />
+<img alt="_images/notebooks6_40_0.png" src="_images/notebooks6_40_0.png" />
 </div>
 </div>
 </section>

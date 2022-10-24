@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Klasifikasi Data &#8212; Fikri Ainun Najib</title>
+    <title>Klasifikasi Data K-NN &#8212; Fikri Ainun Najib</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -151,7 +151,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    <strong>
-    Klasifikasi Data
+    Klasifikasi Data K-NN
    </strong>
   </a>
  </li>
@@ -171,7 +171,16 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks6.html">
-   UTS
+   <strong>
+    UTS Data Mining
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks7.html">
+   <strong>
+    Studi Kasus Diabetic Retinopathy
+   </strong>
   </a>
  </li>
 </ul>
@@ -477,7 +486,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Klasifikasi Data</h1>
+                <h1>Klasifikasi Data K-NN</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -585,8 +594,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="klasifikasi-data">
-<h1><strong>Klasifikasi Data</strong><a class="headerlink" href="#klasifikasi-data" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="klasifikasi-data-k-nn">
+<h1><strong>Klasifikasi Data K-NN</strong><a class="headerlink" href="#klasifikasi-data-k-nn" title="Permalink to this headline">#</a></h1>
 <section id="cara-kerja-algoritma-k-nearest-neighbor">
 <h2>Cara Kerja Algoritma K-Nearest Neighbor<a class="headerlink" href="#cara-kerja-algoritma-k-nearest-neighbor" title="Permalink to this headline">#</a></h2>
 <section id="menentukan-nilai-k">
@@ -626,7 +635,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e58a261c-2cf8-4461-bdac-f3c99890e28e">
+  <div id="df-6907514f-4b07-46a7-ae9a-1645ed3fa6bf">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -746,7 +755,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e58a261c-2cf8-4461-bdac-f3c99890e28e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6907514f-4b07-46a7-ae9a-1645ed3fa6bf')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -797,12 +806,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e58a261c-2cf8-4461-bdac-f3c99890e28e button.colab-df-convert');
+          document.querySelector('#df-6907514f-4b07-46a7-ae9a-1645ed3fa6bf button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e58a261c-2cf8-4461-bdac-f3c99890e28e');
+          const element = document.querySelector('#df-6907514f-4b07-46a7-ae9a-1645ed3fa6bf');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

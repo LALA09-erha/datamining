@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Inisialisasi Model Dan Data ANN &#8212; Fikri Ainun Najib</title>
+    <title>Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN &#8212; Fikri Ainun Najib</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -190,7 +190,9 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Inisialisasi Model Dan Data ANN
+   <strong>
+    Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN
+   </strong>
   </a>
  </li>
 </ul>
@@ -435,34 +437,41 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preprosessing-data">
-   Preprosessing Data
+  <a class="reference internal nav-link" href="#inisialisasi-model-dan-data-ann">
+   Inisialisasi Model Dan Data ANN
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#split-data">
-   Split data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inisialisasi-layer-ann">
-   Inisialisasi Layer ANN
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#train-data-pada-model">
-   Train Data pada Model
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#predict-data-with-x-test">
-   Predict data With X_Test
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#akurasi-ann">
-   Akurasi ANN
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preprosessing-data">
+     Preprosessing Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#split-data">
+     Split data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inisialisasi-layer-ann">
+     Inisialisasi Layer ANN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#train-data-pada-model">
+     Train Data pada Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#predict-data-with-x-test">
+     Predict data With X_Test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#akurasi-ann">
+     Akurasi ANN
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -473,7 +482,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Inisialisasi Model Dan Data ANN</h1>
+                <h1>Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -484,34 +493,41 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preprosessing-data">
-   Preprosessing Data
+  <a class="reference internal nav-link" href="#inisialisasi-model-dan-data-ann">
+   Inisialisasi Model Dan Data ANN
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#split-data">
-   Split data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inisialisasi-layer-ann">
-   Inisialisasi Layer ANN
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#train-data-pada-model">
-   Train Data pada Model
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#predict-data-with-x-test">
-   Predict data With X_Test
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#akurasi-ann">
-   Akurasi ANN
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preprosessing-data">
+     Preprosessing Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#split-data">
+     Split data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inisialisasi-layer-ann">
+     Inisialisasi Layer ANN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#train-data-pada-model">
+     Train Data pada Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#predict-data-with-x-test">
+     Predict data With X_Test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#akurasi-ann">
+     Akurasi ANN
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -523,10 +539,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <p>#<strong>Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN</strong>
-Implementasi dengan menggunakan <code class="docutils literal notranslate"><span class="pre">ANN</span></code></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-8-studi-kasus-heart-disease-5-fitur-ann">
+<h1><strong>Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN</strong><a class="headerlink" href="#tugas-8-studi-kasus-heart-disease-5-fitur-ann" title="Permalink to this headline">#</a></h1>
+<p>Implementasi dengan menggunakan <code class="docutils literal notranslate"><span class="pre">ANN</span></code></p>
 <section id="inisialisasi-model-dan-data-ann">
-<h1>Inisialisasi Model Dan Data ANN<a class="headerlink" href="#inisialisasi-model-dan-data-ann" title="Permalink to this headline">#</a></h1>
+<h2>Inisialisasi Model Dan Data ANN<a class="headerlink" href="#inisialisasi-model-dan-data-ann" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -550,7 +567,7 @@ Implementasi dengan menggunakan <code class="docutils literal notranslate"><span
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-567d2c83-19c3-4ca3-82ca-c0d53a0dae6f">
+  <div id="df-22dbc56d-cc43-4974-bc41-2001c88bb0c0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -621,7 +638,7 @@ Implementasi dengan menggunakan <code class="docutils literal notranslate"><span
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-567d2c83-19c3-4ca3-82ca-c0d53a0dae6f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-22dbc56d-cc43-4974-bc41-2001c88bb0c0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -672,12 +689,12 @@ Implementasi dengan menggunakan <code class="docutils literal notranslate"><span
 
       <script>
         const buttonEl =
-          document.querySelector('#df-567d2c83-19c3-4ca3-82ca-c0d53a0dae6f button.colab-df-convert');
+          document.querySelector('#df-22dbc56d-cc43-4974-bc41-2001c88bb0c0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-567d2c83-19c3-4ca3-82ca-c0d53a0dae6f');
+          const element = document.querySelector('#df-22dbc56d-cc43-4974-bc41-2001c88bb0c0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -706,7 +723,7 @@ Implementasi dengan menggunakan <code class="docutils literal notranslate"><span
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-dfc56816-c951-4cb2-afb3-cc5cb99e20af">
+  <div id="df-0263619b-037a-4bc6-871d-32333663bbaa">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -801,7 +818,7 @@ Implementasi dengan menggunakan <code class="docutils literal notranslate"><span
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-dfc56816-c951-4cb2-afb3-cc5cb99e20af')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0263619b-037a-4bc6-871d-32333663bbaa')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -852,12 +869,12 @@ Implementasi dengan menggunakan <code class="docutils literal notranslate"><span
 
       <script>
         const buttonEl =
-          document.querySelector('#df-dfc56816-c951-4cb2-afb3-cc5cb99e20af button.colab-df-convert');
+          document.querySelector('#df-0263619b-037a-4bc6-871d-32333663bbaa button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-dfc56816-c951-4cb2-afb3-cc5cb99e20af');
+          const element = document.querySelector('#df-0263619b-037a-4bc6-871d-32333663bbaa');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -960,7 +977,7 @@ dtype: bool
 </div>
 </div>
 <section id="preprosessing-data">
-<h2>Preprosessing Data<a class="headerlink" href="#preprosessing-data" title="Permalink to this headline">#</a></h2>
+<h3>Preprosessing Data<a class="headerlink" href="#preprosessing-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
@@ -973,7 +990,7 @@ dtype: bool
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-70374845-9994-4520-971f-d8854e308a0d">
+  <div id="df-532d1713-0649-4ec6-b6b9-b78704e26625">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1081,7 +1098,7 @@ dtype: bool
 </table>
 <p>270 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-70374845-9994-4520-971f-d8854e308a0d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-532d1713-0649-4ec6-b6b9-b78704e26625')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1132,12 +1149,12 @@ dtype: bool
 
       <script>
         const buttonEl =
-          document.querySelector('#df-70374845-9994-4520-971f-d8854e308a0d button.colab-df-convert');
+          document.querySelector('#df-532d1713-0649-4ec6-b6b9-b78704e26625 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-70374845-9994-4520-971f-d8854e308a0d');
+          const element = document.querySelector('#df-532d1713-0649-4ec6-b6b9-b78704e26625');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1160,7 +1177,7 @@ dtype: bool
 </div>
 </section>
 <section id="split-data">
-<h2>Split data<a class="headerlink" href="#split-data" title="Permalink to this headline">#</a></h2>
+<h3>Split data<a class="headerlink" href="#split-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -1177,7 +1194,7 @@ dtype: bool
 </div>
 </section>
 <section id="inisialisasi-layer-ann">
-<h2>Inisialisasi Layer ANN<a class="headerlink" href="#inisialisasi-layer-ann" title="Permalink to this headline">#</a></h2>
+<h3>Inisialisasi Layer ANN<a class="headerlink" href="#inisialisasi-layer-ann" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">classifier</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -1195,7 +1212,7 @@ dtype: bool
 </div>
 </section>
 <section id="train-data-pada-model">
-<h2>Train Data pada Model<a class="headerlink" href="#train-data-pada-model" title="Permalink to this headline">#</a></h2>
+<h3>Train Data pada Model<a class="headerlink" href="#train-data-pada-model" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span> <span class="p">,</span> <span class="n">y_train</span> <span class="p">,</span> <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">8</span> <span class="p">,</span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
@@ -1206,1023 +1223,1011 @@ dtype: bool
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 1/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 21s - loss: 0.6931 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 12s - loss: 0.6932 - accuracy: 0.2500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 1s 2ms/step - loss: 0.6931 - accuracy: 0.4722
+27/27 [==============================] - 1s 1ms/step - loss: 0.6930 - accuracy: 0.5324
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 2/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6931 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6943 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6926 - accuracy: 0.5509
+27/27 [==============================] - 0s 1ms/step - loss: 0.6925 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 3/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6895 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6905 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6922 - accuracy: 0.5509
+27/27 [==============================] - 0s 2ms/step - loss: 0.6920 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 4/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6931 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6971 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6917 - accuracy: 0.5509
+27/27 [==============================] - 0s 1ms/step - loss: 0.6915 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 5/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6846 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6883 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6911 - accuracy: 0.5509
+27/27 [==============================] - 0s 2ms/step - loss: 0.6910 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 6/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6880 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6804 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6907 - accuracy: 0.5509
+27/27 [==============================] - 0s 2ms/step - loss: 0.6905 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 7/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6793 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6857 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6897 - accuracy: 0.5509
+27/27 [==============================] - 0s 2ms/step - loss: 0.6898 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 8/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6776 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7027 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6886 - accuracy: 0.5509
+27/27 [==============================] - 0s 1ms/step - loss: 0.6892 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 9/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6738 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7124 - accuracy: 0.2500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6872 - accuracy: 0.5509
+27/27 [==============================] - 0s 2ms/step - loss: 0.6882 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 10/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7059 - accuracy: 0.2500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6939 - accuracy: 0.5000
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+27/27 [==============================] - 0s 2ms/step - loss: 0.6868 - accuracy: 0.5509
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 11/100
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6720 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 27/27 [==============================] - 0s 2ms/step - loss: 0.6854 - accuracy: 0.5509
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 11/100
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6637 - accuracy: 0.7500
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6826 - accuracy: 0.5509
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 12/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6778 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6643 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6798 - accuracy: 0.5509
+27/27 [==============================] - 0s 2ms/step - loss: 0.6833 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 13/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6761 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6942 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6760 - accuracy: 0.5509
+27/27 [==============================] - 0s 1ms/step - loss: 0.6806 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 14/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6813 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6595 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-26/27 [===========================&gt;..] - ETA: 0s - loss: 0.6728 - accuracy: 0.5577
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6726 - accuracy: 0.5509
+27/27 [==============================] - 0s 1ms/step - loss: 0.6788 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 15/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6836 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6892 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6683 - accuracy: 0.5880
+27/27 [==============================] - 0s 2ms/step - loss: 0.6746 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 16/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6103 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7007 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6635 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.6710 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 17/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6415 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6586 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6596 - accuracy: 0.6343
+27/27 [==============================] - 0s 2ms/step - loss: 0.6673 - accuracy: 0.5509
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 18/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6303 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6452 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6556 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6630 - accuracy: 0.5787
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 19/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6233 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6186 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6517 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6594 - accuracy: 0.6481
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 20/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6652 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6486 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6495 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6564 - accuracy: 0.6343
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 21/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6372 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6595 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6477 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6527 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 22/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7618 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6324 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6450 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6496 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 23/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.8197 - accuracy: 0.2500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5916 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6426 - accuracy: 0.6250
+27/27 [==============================] - 0s 1ms/step - loss: 0.6476 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 24/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7617 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6572 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6414 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6457 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 25/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7349 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7121 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6399 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6437 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 26/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5235 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6302 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6388 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6420 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 27/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7567 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5794 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6373 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6408 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 28/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5489 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6112 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6362 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6396 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 29/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5915 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7120 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6362 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6383 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 30/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5714 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4956 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6351 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6377 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 31/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5228 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7070 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6335 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6360 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 32/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7690 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5509 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6323 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6349 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 33/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5567 - accuracy: 1.0000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6097 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6319 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6336 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 34/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6880 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.8445 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6313 - accuracy: 0.6250
+27/27 [==============================] - 0s 1ms/step - loss: 0.6333 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 35/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5601 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4899 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6298 - accuracy: 0.6250
+27/27 [==============================] - 0s 1ms/step - loss: 0.6325 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 36/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.8203 - accuracy: 0.2500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5424 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6290 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6306 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 37/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6349 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6188 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6284 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6304 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 38/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5904 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7147 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6270 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6299 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 39/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5380 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6475 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6267 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6282 - accuracy: 0.6204
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 40/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5806 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5950 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6267 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6271 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 41/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5330 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6494 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6251 - accuracy: 0.6296
+27/27 [==============================] - 0s 2ms/step - loss: 0.6268 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 42/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6164 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5290 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6240 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6252 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 43/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6708 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6946 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6231 - accuracy: 0.6435
+27/27 [==============================] - 0s 2ms/step - loss: 0.6240 - accuracy: 0.6343
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 44/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6739 - accuracy: 0.2500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5424 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6235 - accuracy: 0.6204
+27/27 [==============================] - 0s 2ms/step - loss: 0.6237 - accuracy: 0.6343
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 45/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5469 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6247 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6229 - accuracy: 0.6343
+27/27 [==============================] - 0s 2ms/step - loss: 0.6226 - accuracy: 0.6343
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 46/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4828 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6078 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6213 - accuracy: 0.6296
+27/27 [==============================] - 0s 1ms/step - loss: 0.6215 - accuracy: 0.6343
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 47/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5185 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7244 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6205 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.6205 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 48/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5335 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6808 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6199 - accuracy: 0.6343
+27/27 [==============================] - 0s 2ms/step - loss: 0.6189 - accuracy: 0.6389
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 49/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5659 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6596 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6188 - accuracy: 0.6343
+27/27 [==============================] - 0s 2ms/step - loss: 0.6184 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 50/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4296 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5120 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6173 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.6174 - accuracy: 0.6435
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 51/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6658 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6383 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6173 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.6164 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 52/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5886 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5729 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6168 - accuracy: 0.6435
+27/27 [==============================] - 0s 2ms/step - loss: 0.6186 - accuracy: 0.6528
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 53/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6909 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7982 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6161 - accuracy: 0.6343
+27/27 [==============================] - 0s 1ms/step - loss: 0.6140 - accuracy: 0.6389
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 54/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6046 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7020 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6147 - accuracy: 0.6204
+27/27 [==============================] - 0s 2ms/step - loss: 0.6145 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 55/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4720 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4944 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - ETA: 0s - loss: 0.6138 - accuracy: 0.6250
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6138 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6144 - accuracy: 0.6574
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 56/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5081 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5380 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6134 - accuracy: 0.6296
+27/27 [==============================] - 0s 2ms/step - loss: 0.6116 - accuracy: 0.6528
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 57/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5413 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6798 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6134 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.6139 - accuracy: 0.6296
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 58/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5655 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5510 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6124 - accuracy: 0.6343
+27/27 [==============================] - 0s 2ms/step - loss: 0.6100 - accuracy: 0.6481
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 59/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4678 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5259 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6111 - accuracy: 0.6204
+27/27 [==============================] - 0s 2ms/step - loss: 0.6085 - accuracy: 0.6481
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 60/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6675 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4582 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6103 - accuracy: 0.6204
+27/27 [==============================] - 0s 2ms/step - loss: 0.6084 - accuracy: 0.6435
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 61/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7008 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5882 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6094 - accuracy: 0.6296
+27/27 [==============================] - 0s 2ms/step - loss: 0.6074 - accuracy: 0.6481
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 62/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6420 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5801 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6095 - accuracy: 0.6343
+27/27 [==============================] - 0s 1ms/step - loss: 0.6068 - accuracy: 0.6574
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 63/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4639 - accuracy: 1.0000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4607 - accuracy: 1.0000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6081 - accuracy: 0.6204
+27/27 [==============================] - 0s 1ms/step - loss: 0.6063 - accuracy: 0.6620
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 64/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6897 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6504 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6079 - accuracy: 0.6296
+27/27 [==============================] - 0s 2ms/step - loss: 0.6051 - accuracy: 0.6481
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 65/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4919 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.3932 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6072 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6049 - accuracy: 0.6528
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 66/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7339 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6611 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6064 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.6038 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 67/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5444 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7058 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6077 - accuracy: 0.6296
+27/27 [==============================] - 0s 2ms/step - loss: 0.6030 - accuracy: 0.6620
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 68/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7379 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5121 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6070 - accuracy: 0.6389
+27/27 [==============================] - 0s 1ms/step - loss: 0.6029 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 69/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6161 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7062 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6048 - accuracy: 0.6296
+27/27 [==============================] - 0s 2ms/step - loss: 0.6024 - accuracy: 0.6620
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 70/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5845 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6826 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6045 - accuracy: 0.6250
+27/27 [==============================] - 0s 2ms/step - loss: 0.6005 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 71/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4838 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6224 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6040 - accuracy: 0.6250
+27/27 [==============================] - 0s 1ms/step - loss: 0.6011 - accuracy: 0.6713
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 72/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6210 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6451 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6044 - accuracy: 0.6574
+27/27 [==============================] - 0s 2ms/step - loss: 0.5996 - accuracy: 0.6620
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 73/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4883 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6312 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6032 - accuracy: 0.6435
+27/27 [==============================] - 0s 2ms/step - loss: 0.5991 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 74/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5832 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7153 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6018 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.5991 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 75/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4387 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.3981 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6020 - accuracy: 0.6528
+27/27 [==============================] - 0s 1ms/step - loss: 0.5977 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 76/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6487 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.9270 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6018 - accuracy: 0.6574
+27/27 [==============================] - 0s 1ms/step - loss: 0.5991 - accuracy: 0.6574
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 77/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5007 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5337 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6010 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.5982 - accuracy: 0.6620
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 78/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4342 - accuracy: 0.8750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5357 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6003 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.5955 - accuracy: 0.6713
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 79/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4160 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5968 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5997 - accuracy: 0.6574
+27/27 [==============================] - 0s 2ms/step - loss: 0.5951 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 80/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6003 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7637 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6003 - accuracy: 0.6620
+27/27 [==============================] - 0s 2ms/step - loss: 0.5954 - accuracy: 0.6481
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 81/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6121 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6854 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6007 - accuracy: 0.6435
+27/27 [==============================] - 0s 2ms/step - loss: 0.5938 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 82/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7086 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5265 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5999 - accuracy: 0.6389
+27/27 [==============================] - 0s 2ms/step - loss: 0.5936 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 83/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5989 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6332 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.6002 - accuracy: 0.6667
+27/27 [==============================] - 0s 1ms/step - loss: 0.5929 - accuracy: 0.6759
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 84/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6792 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5823 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5993 - accuracy: 0.6435
+27/27 [==============================] - 0s 2ms/step - loss: 0.5928 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 85/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6964 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7265 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5988 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.5931 - accuracy: 0.6713
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 86/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5120 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5202 - accuracy: 0.8750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5971 - accuracy: 0.6574
+27/27 [==============================] - 0s 1ms/step - loss: 0.5920 - accuracy: 0.6713
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 87/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6286 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.8297 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5978 - accuracy: 0.6667
+27/27 [==============================] - 0s 2ms/step - loss: 0.5918 - accuracy: 0.6759
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 88/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6174 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4483 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5978 - accuracy: 0.6620
+27/27 [==============================] - 0s 2ms/step - loss: 0.5913 - accuracy: 0.6759
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 89/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5804 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7820 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5970 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.5907 - accuracy: 0.6713
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 90/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5788 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.3424 - accuracy: 1.0000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5964 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.5902 - accuracy: 0.6806
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 91/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5225 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6542 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5967 - accuracy: 0.6481
+27/27 [==============================] - 0s 2ms/step - loss: 0.5905 - accuracy: 0.6667
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 92/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5614 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5596 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5962 - accuracy: 0.6528
+27/27 [==============================] - 0s 2ms/step - loss: 0.5893 - accuracy: 0.6806
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 93/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7244 - accuracy: 0.3750
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5662 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5965 - accuracy: 0.6528
+27/27 [==============================] - 0s 1ms/step - loss: 0.5893 - accuracy: 0.6759
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 94/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6917 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6689 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5975 - accuracy: 0.6574
+27/27 [==============================] - 0s 1ms/step - loss: 0.5900 - accuracy: 0.6759
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 95/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.4992 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5959 - accuracy: 0.7500
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5945 - accuracy: 0.6574
+27/27 [==============================] - 0s 2ms/step - loss: 0.5896 - accuracy: 0.6759
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 96/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7784 - accuracy: 0.5000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6855 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-26/27 [===========================&gt;..] - ETA: 0s - loss: 0.5870 - accuracy: 0.6587
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5955 - accuracy: 0.6574
+27/27 [==============================] - 0s 1ms/step - loss: 0.5883 - accuracy: 0.6852
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 97/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7420 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7597 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5949 - accuracy: 0.6620
+27/27 [==============================] - 0s 1ms/step - loss: 0.5893 - accuracy: 0.6852
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 98/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.5248 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.8089 - accuracy: 0.3750
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5969 - accuracy: 0.6528
+27/27 [==============================] - 0s 1ms/step - loss: 0.5871 - accuracy: 0.6806
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 99/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6276 - accuracy: 0.7500
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.7055 - accuracy: 0.6250
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5959 - accuracy: 0.6574
+27/27 [==============================] - 0s 2ms/step - loss: 0.5875 - accuracy: 0.6713
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 100/100
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.3825 - accuracy: 0.6250
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 1/27 [&gt;.............................] - ETA: 0s - loss: 0.6533 - accuracy: 0.5000
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-27/27 [==============================] - 0s 2ms/step - loss: 0.5955 - accuracy: 0.6481
+27/27 [==============================] - 0s 2ms/step - loss: 0.5870 - accuracy: 0.6759
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;keras.callbacks.History at 0x7f450534ee90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;keras.callbacks.History at 0x7f2850d836d0&gt;
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="predict-data-with-x-test">
-<h2>Predict data With X_Test<a class="headerlink" href="#predict-data-with-x-test" title="Permalink to this headline">#</a></h2>
+<h3>Predict data With X_Test<a class="headerlink" href="#predict-data-with-x-test" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -2235,7 +2240,7 @@ dtype: bool
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-2/2 [==============================] - 0s 4ms/step
+2/2 [==============================] - 0s 3ms/step
 </pre></div>
 </div>
 </div>
@@ -2248,15 +2253,15 @@ dtype: bool
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[20, 11],
-       [ 6, 17]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[23,  8],
+       [ 8, 15]])
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="akurasi-ann">
-<h2>Akurasi ANN<a class="headerlink" href="#akurasi-ann" title="Permalink to this headline">#</a></h2>
+<h3>Akurasi ANN<a class="headerlink" href="#akurasi-ann" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span><span class="n">cm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
@@ -2265,11 +2270,12 @@ dtype: bool
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68.51851851851852
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>70.37037037037037
 </pre></div>
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 

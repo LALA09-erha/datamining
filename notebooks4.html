@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Implementasi K-Means Clustering &#8212; Fikri Ainun Najib</title>
+    <title>Tugas 4 | Implementasi K-Means Clustering &#8212; Fikri Ainun Najib</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Implementasi Decision Tree" href="notebooks5.html" />
-    <link rel="prev" title="Klasifikasi Data K-NN" href="notebooks3.html" />
+    <link rel="next" title="Tugas 5 | Implementasi Decision Tree" href="notebooks5.html" />
+    <link rel="prev" title="Tugas 3 | Klasifikasi Data K-NN" href="notebooks3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -137,35 +137,35 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    <strong>
-    Statistik Deskriptif data
+    Tugas 1 | Statistik Deskriptif data
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks2.html">
    <strong>
-    Diskritisasi data
+    Tugas 2 | Diskritisasi data
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks3.html">
    <strong>
-    Klasifikasi Data K-NN
+    Tugas 3 | Klasifikasi Data K-NN
    </strong>
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    <strong>
-    Implementasi K-Means Clustering
+    Tugas 4 | Implementasi K-Means Clustering
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks5.html">
    <strong>
-    Implementasi Decision Tree
+    Tugas 5 | Implementasi Decision Tree
    </strong>
   </a>
  </li>
@@ -179,15 +179,20 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks7.html">
    <strong>
-    Studi Kasus Diabetic Retinopathy
+    Tugas 6 | Studi Kasus Diabetic Retinopathy
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks9.html">
    <strong>
-    Studi Kasus Diabetic Retinopathy Part 2
+    Tugas 7 | Studi Kasus Diabetic Retinopathy Part 2
    </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks12.html">
+   Inisialisasi Model Dan Data ANN
   </a>
  </li>
 </ul>
@@ -206,6 +211,20 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks10.html">
+   <strong>
+    Studi Kasus Heart Disease 5 Fitur Part 2
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Salinan8.html">
+   <strong>
+    Studi Kasus Heart Disease 5
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Salinan10.html">
    <strong>
     Studi Kasus Heart Disease 5 Fitur Part 2
    </strong>
@@ -468,7 +487,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Implementasi K-Means Clustering</h1>
+                <h1>Tugas 4 | Implementasi K-Means Clustering</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -530,8 +549,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="implementasi-k-means-clustering">
-<h1><strong>Implementasi K-Means Clustering</strong><a class="headerlink" href="#implementasi-k-means-clustering" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-4-implementasi-k-means-clustering">
+<h1><strong>Tugas 4 | Implementasi K-Means Clustering</strong><a class="headerlink" href="#tugas-4-implementasi-k-means-clustering" title="Permalink to this headline">#</a></h1>
 <section id="k-means-clustering">
 <h2>K-Means Clustering<a class="headerlink" href="#k-means-clustering" title="Permalink to this headline">#</a></h2>
 <p>K-Means Clustering adalah salah satu algoritma dalam menentukan klasifikasi terhadap objek berdasarkan attribut / fitur dari objek tersebut kedalam K kluster/partisi. K adalah angka positif yang menyatakan jumlah grup/kluster partisi terhadap objek. Pemartisian data dilakukan dengan mencari nilai jarak minimum antara data dan nilai <em><strong>centroid</strong></em> yang telah di set baik secara random atau pun dengan <em><strong>Initial Set of Centroids</strong></em>, kita juga dapat menentukan nilai centroid berdasarkan <em><strong>K object</strong></em> yang berurutan</p>
@@ -580,7 +599,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-afd20f71-1962-4d60-a6c2-4fee5ece4a1b">
+  <div id="df-1bad9e2e-a4dc-4bf9-9ab0-ab0ec1373e93">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -700,7 +719,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-afd20f71-1962-4d60-a6c2-4fee5ece4a1b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1bad9e2e-a4dc-4bf9-9ab0-ab0ec1373e93')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -751,12 +770,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-afd20f71-1962-4d60-a6c2-4fee5ece4a1b button.colab-df-convert');
+          document.querySelector('#df-1bad9e2e-a4dc-4bf9-9ab0-ab0ec1373e93 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-afd20f71-1962-4d60-a6c2-4fee5ece4a1b');
+          const element = document.querySelector('#df-1bad9e2e-a4dc-4bf9-9ab0-ab0ec1373e93');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -790,7 +809,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b98602f0-567b-4481-84ee-e9bf756830fb">
+  <div id="df-7fe6b2ff-1a28-40ee-ac65-8ab108003e1f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -910,7 +929,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b98602f0-567b-4481-84ee-e9bf756830fb')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7fe6b2ff-1a28-40ee-ac65-8ab108003e1f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -961,12 +980,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b98602f0-567b-4481-84ee-e9bf756830fb button.colab-df-convert');
+          document.querySelector('#df-7fe6b2ff-1a28-40ee-ac65-8ab108003e1f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b98602f0-567b-4481-84ee-e9bf756830fb');
+          const element = document.querySelector('#df-7fe6b2ff-1a28-40ee-ac65-8ab108003e1f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1003,7 +1022,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-66e38816-8157-4b4e-a923-27bb54236099">
+  <div id="df-c04bb852-5700-48e1-b631-478f2629a2f6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1111,7 +1130,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-66e38816-8157-4b4e-a923-27bb54236099')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c04bb852-5700-48e1-b631-478f2629a2f6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1162,12 +1181,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-66e38816-8157-4b4e-a923-27bb54236099 button.colab-df-convert');
+          document.querySelector('#df-c04bb852-5700-48e1-b631-478f2629a2f6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-66e38816-8157-4b4e-a923-27bb54236099');
+          const element = document.querySelector('#df-c04bb852-5700-48e1-b631-478f2629a2f6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1212,156 +1231,156 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[5.0595416 , 0.14694217, 3.41925061],
-       [5.11494335, 0.43816892, 3.39857426],
-       [5.27935534, 0.41230086, 3.56935666],
-       [5.15358977, 0.51883716, 3.42240962],
-       [5.10433388, 0.19796969, 3.46726403],
-       [4.68148797, 0.68380699, 3.14673162],
-       [5.21147652, 0.41520116, 3.51650264],
-       [5.00252706, 0.0599333 , 3.33654987],
-       [5.32798107, 0.80099438, 3.57233779],
-       [5.06790865, 0.36659514, 3.3583767 ],
-       [4.89806763, 0.48784424, 3.32449131],
-       [4.9966845 , 0.25138019, 3.31126872],
-       [5.19103612, 0.49192682, 3.46661272],
-       [5.65173594, 0.90906105, 3.90578362],
-       [5.10804455, 1.02019214, 3.646649  ],
-       [4.88564095, 1.21309192, 3.49427881],
-       [5.03090587, 0.66241377, 3.495248  ],
-       [5.02342022, 0.1509702 , 3.38444981],
-       [4.61792995, 0.82848778, 3.11245944],
-       [4.97213426, 0.39898872, 3.37738931],
-       [4.6955761 , 0.46172719, 3.07471224],
-       [4.9236821 , 0.33762701, 3.31506588],
-       [5.59713396, 0.64435394, 3.93167253],
-       [4.68193765, 0.37946278, 3.01233762],
-       [4.75095704, 0.4845534 , 3.06241269],
-       [4.90772894, 0.44180539, 3.19414543],
-       [4.84545508, 0.20782685, 3.17967089],
-       [4.93969029, 0.21815591, 3.30941724],
-       [5.01833618, 0.2097427 , 3.37648183],
-       [5.02954567, 0.40198507, 3.31272968],
-       [4.98608729, 0.40495926, 3.26550651],
-       [4.79550372, 0.42566654, 3.18083736],
-       [5.06520776, 0.72442529, 3.53142353],
-       [5.04438334, 0.9282198 , 3.57102821],
-       [5.06790865, 0.36659514, 3.3583767 ],
-       [5.25071556, 0.34524194, 3.56904033],
-       [5.02368214, 0.5287646 , 3.43783276],
-       [5.06790865, 0.36659514, 3.3583767 ],
-       [5.40750095, 0.75550778, 3.66205264],
-       [4.9664149 , 0.11131936, 3.31092773],
-       [5.14520862, 0.19181241, 3.49764675],
-       [5.38423754, 1.23935144, 3.60850034],
-       [5.40847417, 0.66602703, 3.68120561],
-       [4.78803478, 0.38986151, 3.14278239],
-       [4.59828494, 0.60761172, 3.00585191],
-       [5.11844067, 0.47370033, 3.39468045],
-       [4.92421655, 0.41855943, 3.32788568],
-       [5.23766854, 0.4673243 , 3.51879523],
-       [4.92859681, 0.41132955, 3.34104251],
-       [5.08216833, 0.14139307, 3.40601705],
-       [1.25489071, 3.97889331, 1.22697525],
-       [1.44477759, 3.57569462, 0.684141  ],
-       [1.01903626, 4.13182671, 1.17527644],
-       [2.45978458, 3.00672446, 0.73153652],
-       [1.3520017 , 3.7451291 , 0.63853451],
-       [1.88009327, 3.34604124, 0.26937898],
-       [1.28902785, 3.74149596, 0.76452634],
-       [3.37155487, 2.233829  , 1.58388575],
-       [1.41123804, 3.70928457, 0.75582717],
-       [2.58955659, 2.79706847, 0.85984838],
-       [3.27864111, 2.5937602 , 1.53611907],
-       [1.90055758, 3.16815277, 0.32426175],
-       [2.38073698, 3.07805003, 0.80841374],
-       [1.45909603, 3.64323922, 0.39674141],
-       [2.60303733, 2.50973943, 0.87269542],
-       [1.50822767, 3.59544045, 0.87306498],
-       [1.85387593, 3.36487622, 0.41229163],
-       [2.25517257, 2.9438057 , 0.53579956],
-       [1.74778451, 3.70189033, 0.6367639 ],
-       [2.49557781, 2.80399572, 0.71254917],
-       [1.37094403, 3.79431048, 0.7093731 ],
-       [2.06563694, 3.02079327, 0.46349013],
-       [1.29106776, 3.98757972, 0.69373966],
-       [1.57547425, 3.60060995, 0.43661144],
-       [1.70495043, 3.37188256, 0.54593856],
-       [1.52298639, 3.55977415, 0.74313017],
-       [1.18965415, 4.00819061, 0.98798453],
-       [0.84636259, 4.20328348, 1.06739835],
-       [1.61913335, 3.47148268, 0.21993519],
-       [2.77868071, 2.42231129, 1.0243726 ],
-       [2.6440625 , 2.73312861, 0.86396528],
-       [2.75566654, 2.61755458, 0.97566381],
-       [2.32254696, 2.82736485, 0.55763082],
-       [1.22324554, 4.06974102, 0.73395781],
-       [1.9942056 , 3.33538484, 0.57500396],
-       [1.61049622, 3.47050313, 0.68790275],
-       [1.19803047, 3.87556344, 0.92700552],
-       [1.81572464, 3.55803204, 0.61459444],
-       [2.20430516, 2.93107352, 0.50830256],
-       [2.40438484, 2.9382294 , 0.6291191 ],
-       [2.14635877, 3.23221163, 0.48790256],
-       [1.52402278, 3.54152397, 0.38266958],
-       [2.26286106, 2.94020271, 0.49185351],
-       [3.33648305, 2.27868208, 1.5485635 ],
-       [2.16211718, 3.07720523, 0.3856087 ],
-       [2.11299567, 3.00931753, 0.44284695],
-       [2.07973003, 3.05790647, 0.3449879 ],
-       [1.76829182, 3.29423618, 0.37241653],
-       [3.44291999, 1.98584793, 1.66064034],
-       [2.16527941, 2.98784069, 0.38393196],
-       [0.77731871, 5.23002792, 2.0445799 ],
-       [1.29757391, 4.13627755, 0.85382472],
-       [0.30610139, 5.2614059 , 2.05245342],
-       [0.65293923, 4.63361544, 1.33089245],
-       [0.38458885, 5.00335807, 1.72813078],
-       [1.14225684, 6.06026336, 2.87401886],
-       [2.4108337 , 3.49158875, 1.07101875],
-       [0.78573677, 5.59810611, 2.39730707],
-       [0.65454939, 4.99343489, 1.67668563],
-       [0.8435596 , 5.60613878, 2.54158648],
-       [0.74552218, 4.31086905, 1.17541367],
-       [0.75289837, 4.46273369, 1.13563278],
-       [0.25958095, 4.80907392, 1.59322675],
-       [1.48572618, 4.11232197, 0.88917352],
-       [1.30303821, 4.34524936, 1.20227628],
-       [0.68288333, 4.57523682, 1.42273608],
-       [0.50991553, 4.5953446 , 1.33403966],
-       [1.47791217, 6.21652572, 3.20105585],
-       [1.52971038, 6.4578628 , 3.20759942],
-       [1.53708992, 4.0684631 , 0.82617494],
-       [0.26952816, 5.07992047, 1.91251832],
-       [1.5334904 , 3.95277017, 0.81891975],
-       [1.31149299, 6.17566126, 2.9794431 ],
-       [1.10668455, 4.05181342, 0.74269596],
-       [0.27627819, 4.92666134, 1.75847731],
-       [0.52766931, 5.27802918, 2.14580999],
-       [1.20765678, 3.91887637, 0.62526165],
-       [1.16212743, 3.94953061, 0.70228926],
-       [0.54629196, 4.78292714, 1.4663925 ],
-       [0.59428255, 5.0624097 , 1.93773659],
-       [0.7312665 , 5.50890116, 2.31885342],
-       [1.43802246, 5.99739877, 3.07340053],
-       [0.5605572 , 4.82261257, 1.51444141],
-       [1.05631592, 4.10541009, 0.81536685],
-       [1.12133058, 4.50652771, 1.23209127],
-       [0.95311851, 5.75777665, 2.6381171 ],
-       [0.73306362, 4.84041238, 1.72401927],
-       [0.57903109, 4.55574275, 1.31541133],
-       [1.29960041, 3.83572575, 0.61011676],
-       [0.34794609, 4.75659458, 1.60532899],
-       [0.3893492 , 4.97248348, 1.77481954],
-       [0.68403844, 4.59738969, 1.53937059],
-       [1.29757391, 4.13627755, 0.85382472],
-       [0.30952112, 5.21259935, 2.00764279],
-       [0.50939919, 5.09085376, 1.94554509],
-       [0.61173881, 4.60751473, 1.44957743],
-       [1.10072376, 4.21459274, 0.89747884],
-       [0.65334214, 4.40998776, 1.17993324],
-       [0.83572418, 4.59839015, 1.50889317],
-       [1.1805499 , 4.07622276, 0.83452741]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[3.41925061, 0.14694217, 5.0595416 ],
+       [3.39857426, 0.43816892, 5.11494335],
+       [3.56935666, 0.41230086, 5.27935534],
+       [3.42240962, 0.51883716, 5.15358977],
+       [3.46726403, 0.19796969, 5.10433388],
+       [3.14673162, 0.68380699, 4.68148797],
+       [3.51650264, 0.41520116, 5.21147652],
+       [3.33654987, 0.0599333 , 5.00252706],
+       [3.57233779, 0.80099438, 5.32798107],
+       [3.3583767 , 0.36659514, 5.06790865],
+       [3.32449131, 0.48784424, 4.89806763],
+       [3.31126872, 0.25138019, 4.9966845 ],
+       [3.46661272, 0.49192682, 5.19103612],
+       [3.90578362, 0.90906105, 5.65173594],
+       [3.646649  , 1.02019214, 5.10804455],
+       [3.49427881, 1.21309192, 4.88564095],
+       [3.495248  , 0.66241377, 5.03090587],
+       [3.38444981, 0.1509702 , 5.02342022],
+       [3.11245944, 0.82848778, 4.61792995],
+       [3.37738931, 0.39898872, 4.97213426],
+       [3.07471224, 0.46172719, 4.6955761 ],
+       [3.31506588, 0.33762701, 4.9236821 ],
+       [3.93167253, 0.64435394, 5.59713396],
+       [3.01233762, 0.37946278, 4.68193765],
+       [3.06241269, 0.4845534 , 4.75095704],
+       [3.19414543, 0.44180539, 4.90772894],
+       [3.17967089, 0.20782685, 4.84545508],
+       [3.30941724, 0.21815591, 4.93969029],
+       [3.37648183, 0.2097427 , 5.01833618],
+       [3.31272968, 0.40198507, 5.02954567],
+       [3.26550651, 0.40495926, 4.98608729],
+       [3.18083736, 0.42566654, 4.79550372],
+       [3.53142353, 0.72442529, 5.06520776],
+       [3.57102821, 0.9282198 , 5.04438334],
+       [3.3583767 , 0.36659514, 5.06790865],
+       [3.56904033, 0.34524194, 5.25071556],
+       [3.43783276, 0.5287646 , 5.02368214],
+       [3.3583767 , 0.36659514, 5.06790865],
+       [3.66205264, 0.75550778, 5.40750095],
+       [3.31092773, 0.11131936, 4.9664149 ],
+       [3.49764675, 0.19181241, 5.14520862],
+       [3.60850034, 1.23935144, 5.38423754],
+       [3.68120561, 0.66602703, 5.40847417],
+       [3.14278239, 0.38986151, 4.78803478],
+       [3.00585191, 0.60761172, 4.59828494],
+       [3.39468045, 0.47370033, 5.11844067],
+       [3.32788568, 0.41855943, 4.92421655],
+       [3.51879523, 0.4673243 , 5.23766854],
+       [3.34104251, 0.41132955, 4.92859681],
+       [3.40601705, 0.14139307, 5.08216833],
+       [1.22697525, 3.97889331, 1.25489071],
+       [0.684141  , 3.57569462, 1.44477759],
+       [1.17527644, 4.13182671, 1.01903626],
+       [0.73153652, 3.00672446, 2.45978458],
+       [0.63853451, 3.7451291 , 1.3520017 ],
+       [0.26937898, 3.34604124, 1.88009327],
+       [0.76452634, 3.74149596, 1.28902785],
+       [1.58388575, 2.233829  , 3.37155487],
+       [0.75582717, 3.70928457, 1.41123804],
+       [0.85984838, 2.79706847, 2.58955659],
+       [1.53611907, 2.5937602 , 3.27864111],
+       [0.32426175, 3.16815277, 1.90055758],
+       [0.80841374, 3.07805003, 2.38073698],
+       [0.39674141, 3.64323922, 1.45909603],
+       [0.87269542, 2.50973943, 2.60303733],
+       [0.87306498, 3.59544045, 1.50822767],
+       [0.41229163, 3.36487622, 1.85387593],
+       [0.53579956, 2.9438057 , 2.25517257],
+       [0.6367639 , 3.70189033, 1.74778451],
+       [0.71254917, 2.80399572, 2.49557781],
+       [0.7093731 , 3.79431048, 1.37094403],
+       [0.46349013, 3.02079327, 2.06563694],
+       [0.69373966, 3.98757972, 1.29106776],
+       [0.43661144, 3.60060995, 1.57547425],
+       [0.54593856, 3.37188256, 1.70495043],
+       [0.74313017, 3.55977415, 1.52298639],
+       [0.98798453, 4.00819061, 1.18965415],
+       [1.06739835, 4.20328348, 0.84636259],
+       [0.21993519, 3.47148268, 1.61913335],
+       [1.0243726 , 2.42231129, 2.77868071],
+       [0.86396528, 2.73312861, 2.6440625 ],
+       [0.97566381, 2.61755458, 2.75566654],
+       [0.55763082, 2.82736485, 2.32254696],
+       [0.73395781, 4.06974102, 1.22324554],
+       [0.57500396, 3.33538484, 1.9942056 ],
+       [0.68790275, 3.47050313, 1.61049622],
+       [0.92700552, 3.87556344, 1.19803047],
+       [0.61459444, 3.55803204, 1.81572464],
+       [0.50830256, 2.93107352, 2.20430516],
+       [0.6291191 , 2.9382294 , 2.40438484],
+       [0.48790256, 3.23221163, 2.14635877],
+       [0.38266958, 3.54152397, 1.52402278],
+       [0.49185351, 2.94020271, 2.26286106],
+       [1.5485635 , 2.27868208, 3.33648305],
+       [0.3856087 , 3.07720523, 2.16211718],
+       [0.44284695, 3.00931753, 2.11299567],
+       [0.3449879 , 3.05790647, 2.07973003],
+       [0.37241653, 3.29423618, 1.76829182],
+       [1.66064034, 1.98584793, 3.44291999],
+       [0.38393196, 2.98784069, 2.16527941],
+       [2.0445799 , 5.23002792, 0.77731871],
+       [0.85382472, 4.13627755, 1.29757391],
+       [2.05245342, 5.2614059 , 0.30610139],
+       [1.33089245, 4.63361544, 0.65293923],
+       [1.72813078, 5.00335807, 0.38458885],
+       [2.87401886, 6.06026336, 1.14225684],
+       [1.07101875, 3.49158875, 2.4108337 ],
+       [2.39730707, 5.59810611, 0.78573677],
+       [1.67668563, 4.99343489, 0.65454939],
+       [2.54158648, 5.60613878, 0.8435596 ],
+       [1.17541367, 4.31086905, 0.74552218],
+       [1.13563278, 4.46273369, 0.75289837],
+       [1.59322675, 4.80907392, 0.25958095],
+       [0.88917352, 4.11232197, 1.48572618],
+       [1.20227628, 4.34524936, 1.30303821],
+       [1.42273608, 4.57523682, 0.68288333],
+       [1.33403966, 4.5953446 , 0.50991553],
+       [3.20105585, 6.21652572, 1.47791217],
+       [3.20759942, 6.4578628 , 1.52971038],
+       [0.82617494, 4.0684631 , 1.53708992],
+       [1.91251832, 5.07992047, 0.26952816],
+       [0.81891975, 3.95277017, 1.5334904 ],
+       [2.9794431 , 6.17566126, 1.31149299],
+       [0.74269596, 4.05181342, 1.10668455],
+       [1.75847731, 4.92666134, 0.27627819],
+       [2.14580999, 5.27802918, 0.52766931],
+       [0.62526165, 3.91887637, 1.20765678],
+       [0.70228926, 3.94953061, 1.16212743],
+       [1.4663925 , 4.78292714, 0.54629196],
+       [1.93773659, 5.0624097 , 0.59428255],
+       [2.31885342, 5.50890116, 0.7312665 ],
+       [3.07340053, 5.99739877, 1.43802246],
+       [1.51444141, 4.82261257, 0.5605572 ],
+       [0.81536685, 4.10541009, 1.05631592],
+       [1.23209127, 4.50652771, 1.12133058],
+       [2.6381171 , 5.75777665, 0.95311851],
+       [1.72401927, 4.84041238, 0.73306362],
+       [1.31541133, 4.55574275, 0.57903109],
+       [0.61011676, 3.83572575, 1.29960041],
+       [1.60532899, 4.75659458, 0.34794609],
+       [1.77481954, 4.97248348, 0.3893492 ],
+       [1.53937059, 4.59738969, 0.68403844],
+       [0.85382472, 4.13627755, 1.29757391],
+       [2.00764279, 5.21259935, 0.30952112],
+       [1.94554509, 5.09085376, 0.50939919],
+       [1.44957743, 4.60751473, 0.61173881],
+       [0.89747884, 4.21459274, 1.10072376],
+       [1.17993324, 4.40998776, 0.65334214],
+       [1.50889317, 4.59839015, 0.83572418],
+       [0.83452741, 4.07622276, 1.1805499 ]])
 </pre></div>
 </div>
 </div>
@@ -1461,13 +1480,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>Klasifikasi Data K-NN</strong></p>
+            <p class="prev-next-title"><strong>Tugas 3 | Klasifikasi Data K-NN</strong></p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="notebooks5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Implementasi Decision Tree</strong></p>
+        <p class="prev-next-title"><strong>Tugas 5 | Implementasi Decision Tree</strong></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

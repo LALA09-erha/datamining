@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Studi Kasus Diabetic Retinopathy Part 2 &#8212; Fikri Ainun Najib</title>
+    <title>Tugas 7 | Studi Kasus Diabetic Retinopathy Part 2 &#8212; Fikri Ainun Najib</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Studi Kasus Heart Disease 5 Fitur" href="notebooks8.html" />
-    <link rel="prev" title="Studi Kasus Diabetic Retinopathy" href="notebooks7.html" />
+    <link rel="next" title="Inisialisasi Model Dan Data ANN" href="notebooks12.html" />
+    <link rel="prev" title="Tugas 6 | Studi Kasus Diabetic Retinopathy" href="notebooks7.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -135,35 +135,35 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    <strong>
-    Statistik Deskriptif data
+    Tugas 1 | Statistik Deskriptif data
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks2.html">
    <strong>
-    Diskritisasi data
+    Tugas 2 | Diskritisasi data
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks3.html">
    <strong>
-    Klasifikasi Data K-NN
+    Tugas 3 | Klasifikasi Data K-NN
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks4.html">
    <strong>
-    Implementasi K-Means Clustering
+    Tugas 4 | Implementasi K-Means Clustering
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks5.html">
    <strong>
-    Implementasi Decision Tree
+    Tugas 5 | Implementasi Decision Tree
    </strong>
   </a>
  </li>
@@ -177,15 +177,20 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks7.html">
    <strong>
-    Studi Kasus Diabetic Retinopathy
+    Tugas 6 | Studi Kasus Diabetic Retinopathy
    </strong>
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    <strong>
-    Studi Kasus Diabetic Retinopathy Part 2
+    Tugas 7 | Studi Kasus Diabetic Retinopathy Part 2
    </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks12.html">
+   Inisialisasi Model Dan Data ANN
   </a>
  </li>
 </ul>
@@ -204,6 +209,20 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks10.html">
+   <strong>
+    Studi Kasus Heart Disease 5 Fitur Part 2
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Salinan8.html">
+   <strong>
+    Studi Kasus Heart Disease 5
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Salinan10.html">
    <strong>
     Studi Kasus Heart Disease 5 Fitur Part 2
    </strong>
@@ -517,7 +536,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Studi Kasus Diabetic Retinopathy Part 2</h1>
+                <h1>Tugas 7 | Studi Kasus Diabetic Retinopathy Part 2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -630,8 +649,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="studi-kasus-diabetic-retinopathy-part-2">
-<h1><strong>Studi Kasus Diabetic Retinopathy Part 2</strong><a class="headerlink" href="#studi-kasus-diabetic-retinopathy-part-2" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-7-studi-kasus-diabetic-retinopathy-part-2">
+<h1><strong>Tugas 7 | Studi Kasus Diabetic Retinopathy Part 2</strong><a class="headerlink" href="#tugas-7-studi-kasus-diabetic-retinopathy-part-2" title="Permalink to this headline">#</a></h1>
 <p>Implementasi dengan Menggunakan Model <code class="docutils literal notranslate"><span class="pre">Bagging</span> <span class="pre">Classifier</span></code> , <code class="docutils literal notranslate"><span class="pre">Random</span> <span class="pre">forest</span></code> dan <code class="docutils literal notranslate"><span class="pre">Stacking</span> <span class="pre">clasifier</span></code></p>
 <section id="membaca-data">
 <h2>Membaca data<a class="headerlink" href="#membaca-data" title="Permalink to this headline">#</a></h2>
@@ -650,7 +669,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-18a78650-0ccd-4f36-8828-a5c34959dc10">
+  <div id="df-cc610c69-076f-45e4-9dd9-c63ed07d51ab">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -811,7 +830,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-18a78650-0ccd-4f36-8828-a5c34959dc10')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cc610c69-076f-45e4-9dd9-c63ed07d51ab')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -862,12 +881,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-18a78650-0ccd-4f36-8828-a5c34959dc10 button.colab-df-convert');
+          document.querySelector('#df-cc610c69-076f-45e4-9dd9-c63ed07d51ab button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-18a78650-0ccd-4f36-8828-a5c34959dc10');
+          const element = document.querySelector('#df-cc610c69-076f-45e4-9dd9-c63ed07d51ab');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -950,7 +969,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a6456058-47f7-4b7d-857b-81dc4f8d7a37">
+  <div id="df-58f19da6-a7ca-404f-96ff-ceec50d84936">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1250,7 +1269,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a6456058-47f7-4b7d-857b-81dc4f8d7a37')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-58f19da6-a7ca-404f-96ff-ceec50d84936')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1301,12 +1320,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a6456058-47f7-4b7d-857b-81dc4f8d7a37 button.colab-df-convert');
+          document.querySelector('#df-58f19da6-a7ca-404f-96ff-ceec50d84936 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a6456058-47f7-4b7d-857b-81dc4f8d7a37');
+          const element = document.querySelector('#df-58f19da6-a7ca-404f-96ff-ceec50d84936');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1340,7 +1359,7 @@ title="Print to PDF"
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-e2ca1e0c-219c-454b-8660-9c603fd84a4f">
+  <div id="df-954731e0-a7cd-48b8-bb8d-cd5b9f26530c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1628,7 +1647,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e2ca1e0c-219c-454b-8660-9c603fd84a4f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-954731e0-a7cd-48b8-bb8d-cd5b9f26530c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1679,12 +1698,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e2ca1e0c-219c-454b-8660-9c603fd84a4f button.colab-df-convert');
+          document.querySelector('#df-954731e0-a7cd-48b8-bb8d-cd5b9f26530c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e2ca1e0c-219c-454b-8660-9c603fd84a4f');
+          const element = document.querySelector('#df-954731e0-a7cd-48b8-bb8d-cd5b9f26530c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1727,7 +1746,7 @@ title="Print to PDF"
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-0d4901af-f3b4-4610-a448-8175a61f024f">
+  <div id="df-476a5c36-7099-448c-8c87-ed8cf57862b3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1992,7 +2011,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0d4901af-f3b4-4610-a448-8175a61f024f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-476a5c36-7099-448c-8c87-ed8cf57862b3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2043,12 +2062,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0d4901af-f3b4-4610-a448-8175a61f024f button.colab-df-convert');
+          document.querySelector('#df-476a5c36-7099-448c-8c87-ed8cf57862b3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0d4901af-f3b4-4610-a448-8175a61f024f');
+          const element = document.querySelector('#df-476a5c36-7099-448c-8c87-ed8cf57862b3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2123,6 +2142,12 @@ title="Print to PDF"
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
   FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
@@ -2135,19 +2160,7 @@ title="Print to PDF"
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
   FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
 /usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
   FutureWarning,
 /usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
   FutureWarning,
@@ -2239,27 +2252,7 @@ title="Print to PDF"
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
   FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
 /usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
-  FutureWarning,
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
   FutureWarning,
 </pre></div>
 </div>
@@ -2425,109 +2418,102 @@ title="Print to PDF"
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">9</span><span class="n">fc4a176f2b0</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span>                           <span class="n">n_estimators</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>   <span class="c1"># inisialisasi model</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>   <span class="n">clf</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">SVC</span><span class="p">(),</span>
+<span class="ne">---&gt; </span><span class="mi">18</span>                           <span class="n">n_estimators</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">19</span>   <span class="c1"># predict x_test</span>
-<span class="ne">---&gt; </span><span class="mi">20</span>   <span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span>   <span class="c1"># akurasi count</span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span>   <span class="n">akurasi_bags_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>   <span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_bagging.py</span> in <span class="ni">predict</span><span class="nt">(self, X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">742</span>             <span class="n">The</span> <span class="n">predicted</span> <span class="n">classes</span><span class="o">.</span>
-<span class="g g-Whitespace">    </span><span class="mi">743</span>         <span class="sd">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">744</span><span class="sd">         predicted_probabilitiy = self.predict_proba(X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">745</span><span class="sd">         return self.classes_.take((np.argmax(predicted_probabilitiy, axis=1)), axis=0)</span>
-<span class="g g-Whitespace">    </span><span class="mi">746</span><span class="sd"> </span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_bagging.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="g g-Whitespace">    </span><span class="mi">267</span>             <span class="n">multi_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">268</span>         <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">269</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_samples</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">270</span> 
+<span class="g g-Whitespace">    </span><span class="mi">271</span>     <span class="k">def</span> <span class="nf">_parallel_args</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_bagging.py</span> in <span class="ni">predict_proba</span><span class="nt">(self, X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">791</span><span class="sd">                 self.n_classes_,</span>
-<span class="g g-Whitespace">    </span><span class="mi">792</span><span class="sd">             )</span>
-<span class="nn">--&gt; 793             for i</span> in <span class="ni">range</span><span class="nt">(n_jobs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">794</span><span class="sd">         )</span>
-<span class="g g-Whitespace">    </span><span class="mi">795</span><span class="sd"> </span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_bagging.py</span> in <span class="ni">_fit</span><span class="nt">(self, X, y, max_samples, max_depth, sample_weight)</span>
+<span class="g g-Whitespace">    </span><span class="mi">405</span>                 <span class="n">verbose</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">406</span>             <span class="p">)</span>
+<span class="nn">--&gt; 407             for i</span> in <span class="ni">range</span><span class="nt">(n_jobs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">408</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">409</span> 
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">__call__</span><span class="nt">(self, iterable)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1083</span><span class="sd">             # remaining jobs.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1084</span><span class="sd">             self._iterating = False</span>
-<span class="ne">-&gt; </span><span class="mi">1085</span><span class="sd">             if self.dispatch_one_batch(iterator):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1086</span><span class="sd">                 self._iterating = self._original_iterator is not None</span>
-<span class="g g-Whitespace">   </span><span class="mi">1087</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1083</span>             <span class="c1"># remaining jobs.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1084</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_iterating</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="ne">-&gt; </span><span class="mi">1085</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dispatch_one_batch</span><span class="p">(</span><span class="n">iterator</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1086</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_iterating</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_original_iterator</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1087</span> 
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">dispatch_one_batch</span><span class="nt">(self, iterator)</span>
-<span class="g g-Whitespace">    </span><span class="mi">899</span><span class="sd">                 return False</span>
-<span class="g g-Whitespace">    </span><span class="mi">900</span><span class="sd">             else:</span>
-<span class="ne">--&gt; </span><span class="mi">901</span><span class="sd">                 self._dispatch(tasks)</span>
-<span class="g g-Whitespace">    </span><span class="mi">902</span><span class="sd">                 return True</span>
-<span class="g g-Whitespace">    </span><span class="mi">903</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">899</span>                 <span class="k">return</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">900</span>             <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">901</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_dispatch</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">902</span>                 <span class="k">return</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">903</span> 
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">_dispatch</span><span class="nt">(self, batch)</span>
-<span class="g g-Whitespace">    </span><span class="mi">817</span><span class="sd">         with self._lock:</span>
-<span class="g g-Whitespace">    </span><span class="mi">818</span><span class="sd">             job_idx = len(self._jobs)</span>
-<span class="ne">--&gt; </span><span class="mi">819</span><span class="sd">             job = self._backend.apply_async(batch, callback=cb)</span>
-<span class="g g-Whitespace">    </span><span class="mi">820</span><span class="sd">             # A job can complete so quickly than its callback is</span>
-<span class="g g-Whitespace">    </span><span class="mi">821</span><span class="sd">             # called before we get here, causing self._jobs to</span>
+<span class="g g-Whitespace">    </span><span class="mi">817</span>         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">818</span>             <span class="n">job_idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_jobs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">819</span>             <span class="n">job</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_backend</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">cb</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">820</span>             <span class="c1"># A job can complete so quickly than its callback is</span>
+<span class="g g-Whitespace">    </span><span class="mi">821</span>             <span class="c1"># called before we get here, causing self._jobs to</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/_parallel_backends.py</span> in <span class="ni">apply_async</span><span class="nt">(self, func, callback)</span>
-<span class="g g-Whitespace">    </span><span class="mi">206</span><span class="sd">     def apply_async(self, func, callback=None):</span>
-<span class="g g-Whitespace">    </span><span class="mi">207</span><span class="sd">         &quot;&quot;&quot;</span><span class="n">Schedule</span> <span class="n">a</span> <span class="n">func</span> <span class="n">to</span> <span class="n">be</span> <span class="n">run</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">208</span><span class="s2">         result = ImmediateResult(func)</span>
-<span class="g g-Whitespace">    </span><span class="mi">209</span><span class="s2">         if callback:</span>
-<span class="g g-Whitespace">    </span><span class="mi">210</span><span class="s2">             callback(result)</span>
+<span class="g g-Whitespace">    </span><span class="mi">206</span>     <span class="k">def</span> <span class="nf">apply_async</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">207</span>         <span class="sd">&quot;&quot;&quot;Schedule a func to be run&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">208</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">ImmediateResult</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>         <span class="k">if</span> <span class="n">callback</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>             <span class="n">callback</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/_parallel_backends.py</span> in <span class="ni">__init__</span><span class="nt">(self, batch)</span>
-<span class="g g-Whitespace">    </span><span class="mi">595</span><span class="s2">         # Don&#39;t delay the application, to avoid keeping the input</span>
-<span class="g g-Whitespace">    </span><span class="mi">596</span><span class="s2">         # arguments in memory</span>
-<span class="ne">--&gt; </span><span class="mi">597</span><span class="s2">         self.results = batch()</span>
-<span class="g g-Whitespace">    </span><span class="mi">598</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">599</span><span class="s2">     def get(self):</span>
+<span class="g g-Whitespace">    </span><span class="mi">595</span>         <span class="c1"># Don&#39;t delay the application, to avoid keeping the input</span>
+<span class="g g-Whitespace">    </span><span class="mi">596</span>         <span class="c1"># arguments in memory</span>
+<span class="ne">--&gt; </span><span class="mi">597</span>         <span class="bp">self</span><span class="o">.</span><span class="n">results</span> <span class="o">=</span> <span class="n">batch</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">598</span> 
+<span class="g g-Whitespace">    </span><span class="mi">599</span>     <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">__call__</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">287</span><span class="s2">         with parallel_backend(self._backend, n_jobs=self._n_jobs):</span>
-<span class="g g-Whitespace">    </span><span class="mi">288</span><span class="s2">             return [func(*args, **kwargs)</span>
-<span class="ne">--&gt; </span><span class="mi">289</span><span class="s2">                     for func, args, kwargs in self.items]</span>
-<span class="g g-Whitespace">    </span><span class="mi">290</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">291</span><span class="s2">     def __reduce__(self):</span>
+<span class="g g-Whitespace">    </span><span class="mi">287</span>         <span class="k">with</span> <span class="n">parallel_backend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_backend</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_n_jobs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">288</span>             <span class="k">return</span> <span class="p">[</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">289</span>                     <span class="k">for</span> <span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> 
+<span class="g g-Whitespace">    </span><span class="mi">291</span>     <span class="k">def</span> <span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/joblib/parallel.py</span> in <span class="ni">&lt;listcomp&gt;</span><span class="nt">(.0)</span>
-<span class="g g-Whitespace">    </span><span class="mi">287</span><span class="s2">         with parallel_backend(self._backend, n_jobs=self._n_jobs):</span>
-<span class="g g-Whitespace">    </span><span class="mi">288</span><span class="s2">             return [func(*args, **kwargs)</span>
-<span class="ne">--&gt; </span><span class="mi">289</span><span class="s2">                     for func, args, kwargs in self.items]</span>
-<span class="g g-Whitespace">    </span><span class="mi">290</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">291</span><span class="s2">     def __reduce__(self):</span>
+<span class="g g-Whitespace">    </span><span class="mi">287</span>         <span class="k">with</span> <span class="n">parallel_backend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_backend</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_n_jobs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">288</span>             <span class="k">return</span> <span class="p">[</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">289</span>                     <span class="k">for</span> <span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span> 
+<span class="g g-Whitespace">    </span><span class="mi">291</span>     <span class="k">def</span> <span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/utils/fixes.py</span> in <span class="ni">__call__</span><span class="nt">(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">214</span><span class="s2">     def __call__(self, *args, **kwargs):</span>
-<span class="g g-Whitespace">    </span><span class="mi">215</span><span class="s2">         with config_context(**self.config):</span>
-<span class="ne">--&gt; </span><span class="mi">216</span><span class="s2">             return self.function(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">217</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">218</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span>     <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>         <span class="k">with</span> <span class="n">config_context</span><span class="p">(</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">216</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">217</span> 
+<span class="g g-Whitespace">    </span><span class="mi">218</span> 
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_bagging.py</span> in <span class="ni">_parallel_predict_proba</span><span class="nt">(estimators, estimators_features, X, n_classes)</span>
-<span class="g g-Whitespace">    </span><span class="mi">151</span><span class="s2">         else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">152</span><span class="s2">             # Resort to voting</span>
-<span class="ne">--&gt; </span><span class="mi">153</span><span class="s2">             predictions = estimator.predict(X[:, features])</span>
-<span class="g g-Whitespace">    </span><span class="mi">154</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">155</span><span class="s2">             for i in range(n_samples):</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_bagging.py</span> in <span class="ni">_parallel_build_estimators</span><span class="nt">(n_estimators, ensemble, X, y, sample_weight, seeds, total_n_estimators, verbose)</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span>                 <span class="n">curr_sample_weight</span><span class="p">[</span><span class="n">not_indices_mask</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> 
+<span class="ne">--&gt; </span><span class="mi">123</span>             <span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">features</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">curr_sample_weight</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span> 
+<span class="g g-Whitespace">    </span><span class="mi">125</span>         <span class="k">else</span><span class="p">:</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/svm/_base.py</span> in <span class="ni">predict</span><span class="nt">(self, X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">789</span><span class="s2">             y = np.argmax(self.decision_function(X), axis=1)</span>
-<span class="g g-Whitespace">    </span><span class="mi">790</span><span class="s2">         else:</span>
-<span class="ne">--&gt; </span><span class="mi">791</span><span class="s2">             y = super().predict(X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">792</span><span class="s2">         return self.classes_.take(np.asarray(y, dtype=np.intp))</span>
-<span class="g g-Whitespace">    </span><span class="mi">793</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/svm/_base.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="g g-Whitespace">    </span><span class="mi">253</span> 
+<span class="g g-Whitespace">    </span><span class="mi">254</span>         <span class="n">seed</span> <span class="o">=</span> <span class="n">rnd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="s2">&quot;i&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">255</span>         <span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="p">,</span> <span class="n">solver_type</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">random_seed</span><span class="o">=</span><span class="n">seed</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">256</span>         <span class="c1"># see comment on the other call to np.iinfo in this file</span>
+<span class="g g-Whitespace">    </span><span class="mi">257</span> 
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/svm/_base.py</span> in <span class="ni">predict</span><span class="nt">(self, X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">414</span><span class="s2">         X = self._validate_for_predict(X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">415</span><span class="s2">         predict = self._sparse_predict if self._sparse else self._dense_predict</span>
-<span class="ne">--&gt; </span><span class="mi">416</span><span class="s2">         return predict(X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">417</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">418</span><span class="s2">     def _dense_predict(self, X):</span>
-
-<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/svm/_base.py</span> in <span class="ni">_dense_predict</span><span class="nt">(self, X)</span>
-<span class="g g-Whitespace">    </span><span class="mi">447</span><span class="s2">             coef0=self.coef0,</span>
-<span class="g g-Whitespace">    </span><span class="mi">448</span><span class="s2">             gamma=self._gamma,</span>
-<span class="ne">--&gt; </span><span class="mi">449</span><span class="s2">             cache_size=self.cache_size,</span>
-<span class="g g-Whitespace">    </span><span class="mi">450</span><span class="s2">         )</span>
-<span class="g g-Whitespace">    </span><span class="mi">451</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/svm/_base.py</span> in <span class="ni">_dense_fit</span><span class="nt">(self, X, y, sample_weight, solver_type, kernel, random_seed)</span>
+<span class="g g-Whitespace">    </span><span class="mi">331</span>             <span class="n">epsilon</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">epsilon</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">332</span>             <span class="n">max_iter</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">333</span>             <span class="n">random_seed</span><span class="o">=</span><span class="n">random_seed</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span> 
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -3658,13 +3644,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>Studi Kasus Diabetic Retinopathy</strong></p>
+            <p class="prev-next-title"><strong>Tugas 6 | Studi Kasus Diabetic Retinopathy</strong></p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="notebooks8.html" title="next page">
+    <a class='right-next' id="next-link" href="notebooks12.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Studi Kasus Heart Disease 5 Fitur</strong></p>
+        <p class="prev-next-title">Inisialisasi Model Dan Data ANN</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

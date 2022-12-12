@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Fikri Ainun Najib</title>
+    <title>Tugas 9 | Regresi Linear &#8212; Fikri Ainun Najib</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,6 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Studi Kasus Heart Disease 5 Fitur" href="notebooks8.html" />
+    <link rel="prev" title="Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN" href="notebooks12.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -129,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
   Task
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    <strong>
@@ -191,6 +193,11 @@ const thebe_selector_output = ".output, .cell_output"
    <strong>
     Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN
    </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tugas 9 | Regresi Linear
   </a>
  </li>
 </ul>
@@ -412,50 +419,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Tugas 9 | Regresi Linear</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -463,18 +443,32 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-9-regresi-linear">
+<h1>Tugas 9 | Regresi Linear<a class="headerlink" href="#tugas-9-regresi-linear" title="Permalink to this headline">#</a></h1>
+<p>Regresi Linear merupakan sebuah pendekatan untuk memodelkan hubungan antara variabel terikat (Y) dan variable bebas (X). Salah satu kegunaan dari regresi linear adalah untuk melakukan prediksi berdasarkan data-data yang telah dimiliki sebelumnya. Hubungan di antara variabel-variabel tersebut disebut sebagai model regresi linear</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_regression</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span>
-<span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">make_regression</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">pyplot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
-<span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_regression</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">make_regression</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># reg.score(X_test, y_test)</span>
+<span class="c1"># reg.coef_</span>
+<span class="c1"># reg.intercept_</span>
+<span class="n">reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">]]))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/notebooks11_0_0.png" src="_images/notebooks11_0_0.png" />
+<img alt="_images/notebooks11_2_0.png" src="_images/notebooks11_2_0.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([219.15461205])
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -484,35 +478,271 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 55.43290844, -69.06708351, -66.2335612 ,  -8.64310356,
-       -42.4846113 ,  12.32477065,  70.0440983 , -35.4087879 ,
-       -43.02115684,  -8.93358684,   1.04024117, -28.76071409,
-       -34.59867285, -48.27516171, -17.51811178,  42.73323898,
-        31.66403926,  43.56640888,   3.46365811,  14.89786723,
-       -38.89353006, -51.91781776,  32.1880687 , -32.94549652,
-       -25.46315   , -63.18009001,   5.72979348,  29.3129838 ,
-        57.6368128 , -16.16784024,  52.89649371,  63.86648025,
-        23.78229053,   4.80391559, -25.19845658,  55.08903146,
-         9.45871842,   8.69982801, -51.87197356,  44.25081834,
-        36.44805431, -22.55456413,  21.10161555, -36.40751573,
-        21.6476309 ,  19.77487101,  42.66076739, -40.44673687,
-         0.23098435,   7.10677697,  -4.27441429,  46.65280423,
-        -3.90378533,  -3.306407  , -10.80725242, -59.79329687,
-        14.72580314, -20.09275414,  11.46426454,  75.97794233,
-       -12.86514658, -35.61140989,  34.67691654,  32.14812951,
-       -14.28924372,  -1.33988616,  14.0965466 ,  23.38945371,
-         7.44168196, -52.22550652, -10.48193443,  11.27050788,
-       -49.52105466, -18.64320779, -30.57664452,  15.56543889,
-        94.08278439,  36.68532509,  10.94894067,  71.22114369,
-        18.66465798,  24.56025114, -28.42115652, -88.13093972,
-       -21.39249532,  -2.59016802,  36.27849118, -46.8019856 ,
-        10.3498816 , -23.93248498,  34.79544043, -27.75967589,
-        48.69316901, -58.138988  ,  26.91429859, -14.88321991,
-       -18.87925758, -29.61489237,   1.07131744, -12.8485939 ])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([  63.72425077,  -28.59401443,    3.38083906,   74.37182041,
+         59.50077228,  -47.66804992,  122.26239639,  108.38379796,
+         19.6059238 , -191.17571422,  -96.6061302 ,   26.07673483,
+         67.71922098,   41.44795376,   60.23363318,  133.02643069,
+         52.10593429, -113.05838345,    6.24398212,   90.41591584,
+         27.32318292,  -69.68102923,   44.67428355,  170.07593519,
+        -29.72012697,    9.93537491,  131.53492465,  105.29487586,
+        -96.24247177,  211.20237128,   18.69253184,  -88.43933532,
+         21.87012546,  -81.79734622,  -37.526641  , -112.00531471,
+        -47.00185752, -156.47408371,  -81.60449107,   61.16823937,
+        -11.8438003 ,   51.49530151,  -52.39820388, -100.89148806,
+         36.1724136 ,   20.10055407,  -86.33437848,    6.40323189,
+         57.97958005,  -49.45565587, -167.57258767,  -76.56211074,
+        103.97026108,   22.90907873, -161.87933729,  -97.54181502,
+        -12.76224414,   44.20327877,  -14.08673663,  -45.11955768,
+         45.88326168,  -41.74614846,  -26.48886125,   58.90637454,
+         -1.1788034 ,   71.71087914,   57.4524079 ,  -25.19370074,
+         34.11356924,  134.36580623,  115.10680619,   63.91301422,
+        -50.6042379 , -113.20503286,  -71.08222417,    4.08513104,
+         55.21768401,   40.57465817,   75.03774386,   93.58382569,
+       -102.6734696 ,   30.90672065,  112.47493329,  113.96544387,
+        -79.87674636,  -43.43370171, -127.24349836,   11.83178203,
+        -29.64492379,   34.99640823, -145.85841173,  -39.63583963,
+        152.63257428,   40.32934225,  -15.02145479, -105.26919048,
+        -47.38115133,   55.37116251,  -10.12328471,  139.46332613,
+          9.86870931,  121.0472362 ,  -76.57133576,  -91.96926088,
+        -48.50714076,   -0.67626927,   94.63981921,   32.93081159,
+        -51.79526145,   46.132782  , -122.72315483,   12.96732974,
+         87.78334621,  -97.16013081,   46.02993798,   79.82562744,
+        101.45992782,   15.3164555 , -148.67689382,  -16.30861637,
+         28.92488029,   60.93288413,  -44.48421606,  170.32333108,
+        -92.82983446,  -13.18963376,  -23.38523036,  227.49234557,
+         96.97310629,   71.18941939,  164.58468326,  -34.99690489,
+         26.60975236,  108.01917272,  117.5061506 ,  -58.86648226,
+        -88.500419  ,  108.29476572, -189.78615678,  -66.9188097 ,
+        -65.07654711,   20.92051928,   62.70112056,   53.92386425,
+         90.65215735,  -63.8068807 ,   27.58549552, -203.93845762,
+         36.89707973,  150.68020127])
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 1.28939819],
+       [ 0.47501753],
+       [ 0.2038654 ],
+       [ 0.52675889],
+       [-0.12574603],
+       [ 0.19372046],
+       [ 0.93317198],
+       [ 0.32110046],
+       [-1.41255539],
+       [-2.19012345],
+       [-0.68030982],
+       [ 0.76955728],
+       [ 0.73696268],
+       [ 0.8455614 ],
+       [ 1.29265041],
+       [ 1.34880876],
+       [ 1.12475779],
+       [-0.99720468],
+       [-0.00512705],
+       [ 2.17438347],
+       [-0.53973539],
+       [-0.30203298],
+       [ 0.6078238 ],
+       [ 1.35538169],
+       [ 0.06599015],
+       [ 0.45732114],
+       [ 1.7562252 ],
+       [ 1.96742107],
+       [-1.52964768],
+       [ 2.41148577],
+       [ 0.0697904 ],
+       [-1.48800545],
+       [-0.60335328],
+       [-0.86425773],
+       [ 0.65827643],
+       [-1.2234507 ],
+       [-0.82331686],
+       [-2.29119949],
+       [-0.48615348],
+       [ 1.0850463 ],
+       [-0.15045547],
+       [ 1.13883085],
+       [-0.95464432],
+       [-0.02853542],
+       [ 0.03169923],
+       [ 0.82956339],
+       [-2.10491422],
+       [-0.32623524],
+       [ 0.55916234],
+       [-1.37452333],
+       [-1.08211392],
+       [-0.67309602],
+       [ 0.69440238],
+       [ 0.91103824],
+       [-0.8060298 ],
+       [-0.30291527],
+       [-0.29594503],
+       [-0.23342059],
+       [ 0.63088266],
+       [ 0.20251062],
+       [ 0.62516902],
+       [-0.88193557],
+       [ 0.17661109],
+       [ 0.74534316],
+       [-0.8573261 ],
+       [ 0.79532873],
+       [ 0.08753665],
+       [ 0.10741276],
+       [ 1.38767649],
+       [ 1.58201226],
+       [ 0.99385156],
+       [ 0.81457438],
+       [-0.5037537 ],
+       [-0.39489886],
+       [-0.96428576],
+       [ 0.31395227],
+       [ 0.01189617],
+       [ 0.20538   ],
+       [ 0.67888927],
+       [ 0.47647472],
+       [-0.02113362],
+       [ 0.74483835],
+       [ 1.17966399],
+       [ 0.87504925],
+       [-1.77469519],
+       [-0.60908409],
+       [-2.00863609],
+       [ 0.33589845],
+       [-0.28455879],
+       [ 0.30286578],
+       [-1.20797198],
+       [-0.19031093],
+       [ 1.06523739],
+       [-0.41275814],
+       [-0.63827405],
+       [-1.39576018],
+       [-0.01768974],
+       [ 0.65157836],
+       [ 0.85134821],
+       [ 1.30676198],
+       [-0.06545131],
+       [ 1.49354867],
+       [ 0.23357669],
+       [-1.03408974],
+       [-0.41365917],
+       [-0.15844117],
+       [ 1.99906087],
+       [ 0.45820611],
+       [ 0.13982382],
+       [ 0.63382458],
+       [-1.12553454],
+       [ 0.20982147],
+       [ 0.83123628],
+       [-0.62677495],
+       [ 0.7625423 ],
+       [-0.24489486],
+       [ 0.74469907],
+       [ 0.30029768],
+       [-1.11526013],
+       [ 0.15281347],
+       [ 1.03335134],
+       [ 0.17067343],
+       [ 0.53498328],
+       [ 1.90468442],
+       [-0.33109239],
+       [-0.76317392],
+       [ 0.58283423],
+       [ 2.14669477],
+       [ 1.15377642],
+       [ 0.97393095],
+       [ 2.39358456],
+       [-0.3239553 ],
+       [ 0.1947428 ],
+       [ 0.12111619],
+       [ 0.60125581],
+       [ 0.36023621],
+       [-0.94262785],
+       [ 0.39514842],
+       [-1.13732999],
+       [-1.29103141],
+       [-0.70966042],
+       [-0.28292568],
+       [ 0.89735655],
+       [ 0.22888684],
+       [ 1.41042847],
+       [-0.18933144],
+       [ 0.25135288],
+       [-2.03235969],
+       [ 0.77628828],
+       [ 1.31985258]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.692447607768476
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reg</span><span class="o">.</span><span class="n">coef_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([74.08391088])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reg</span><span class="o">.</span><span class="n">intercept_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-3.0971205793570276
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">Y_plot</span> <span class="o">=</span> <span class="n">reg</span><span class="o">.</span><span class="n">coef_</span><span class="o">*</span><span class="n">X_test</span><span class="o">+</span><span class="n">reg</span><span class="o">.</span><span class="n">intercept_</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">Y_plot</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/notebooks11_8_0.png" src="_images/notebooks11_8_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([145.07070117])
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -541,6 +771,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="notebooks12.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><strong>Tugas 8 | Studi Kasus Heart Disease 5 Fitur | ANN</strong></p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="notebooks8.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Studi Kasus Heart Disease 5 Fitur</strong></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
